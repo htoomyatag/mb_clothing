@@ -1,13 +1,16 @@
+
 <% @body_id = 'home-page' %>
-<% content_for :sidebar do %>
-  <div data-hook="homepage_sidebar_navigation">
-    <%= render partial: 'spree/shared/taxonomies' %>
-  </div>
-<% end %>
 
-<div data-hook="homepage_products">
-  <% cache(cache_key_for_products) do %>
-    <%= render partial: 'spree/shared/products', locals: { products: @products } %>
-  <% end %>
-</div>
 
+<br><br><br><br><br><br>
+
+<h3>PRODUCT OVERVIEW</h3>
+<ul class="nav nav-pills" role="tablist">
+  <li role="presentation" class="active"><a href="#">All Products <span class="badge">42</span></a></li>
+  <li role="presentation"><a href="#">Women</a></li>
+  <li role="presentation"><a href="#">Men</a></li>
+  <li role="presentation"><a href="#">Bag</a></li>
+  <li role="presentation"><a href="#">Shoes</a></li>
+  <li role="presentation"><a href="#">Watches</a></li>
+  
+</ul>

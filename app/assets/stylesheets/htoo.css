@@ -14,3 +14,45 @@
 }
 
 
+
+
+.htoo_secondnav{
+
+    font-size: 14px;
+    color: #333;
+    padding: 5px 0px;
+
+}
+
+
+.htoo_secondnav:hover{
+
+    color: #6c7ae0;
+
+}
+
+.htoo_secondnav:hover{
+
+    color: #none;
+    cursor: pointer;
+
+}
+
+
+
+
+#spree-header .nav a{
+  color: #333;
+     text-decoration: none;
+}
+
+
+#spree-header .nav a:hover{
+
+    
+    color: #6c7ae0;
+     text-decoration:none; !important
+        font-weight:bold; !important
+        cursor:default; !important
+
+}

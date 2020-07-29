@@ -2,12 +2,40 @@
 <% @body_id = 'home-page' %>
 
 
-<div style="height: 60px;">
-	
 
 
 
+<div style="height: 160px;"  ></div>
+
+<div class="row" >
+	<div class="col-md-4" >
+		<div class="panel panel-default" id="style_cateback" >	
+		  <div class="panel-body" id="style_catebackbody">
+			  <p id="htoo_styleheader">Casual</p>
+			  <p id="htoo_styletext"> &nbsp;Style 2020</p>
+		  </div>
+		</div> 
+	</div>
+	<div class="col-md-4" >
+		<div class="panel panel-default" id="style_cateback" >	
+		  <div class="panel-body" id="style_catebackbody">
+			  <p id="htoo_styleheader">Smart</p>
+			  <p id="htoo_styletext"> &nbsp;Style 2020</p>
+		  </div>
+		</div> 
+	</div>
+		<div class="col-md-4" >
+		<div class="panel panel-default" id="style_cateback" >	
+		  <div class="panel-body" id="style_catebackbody">
+			  <p id="htoo_styleheader">Elegant</p>
+			  <p id="htoo_styletext"> &nbsp;Style 2020</p>
+		  </div>
+		</div> 
+	</div>
 </div>
+
+
+
 <h3 id="htoo_producthead">PRODUCT OVERVIEW </h3>
 <h5>
 		<a href="#" class="htoo_subheadera">All Products</a>
@@ -34,12 +62,6 @@
   			<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Filter
 		</button>
 
-
-	
-
-
-
-
 </h5>
 
 <div class="row"  id="htoo_bigsearch">
@@ -59,42 +81,33 @@
  
 </div><!-- /.row -->
 <br>
-<div class="col-md-12" id="htoo_bigfilter">
-	
-    
-	<div class="col-md-4">
 
-		<ul class="list-group" id="htoo_listbox">
-			
-		  <li class="list-group-item" id="htoo_list_head">Sort By</li>
-		  <li class="list-group-item" id="htoo_list">Cras justo odio</li>
-		  <li class="list-group-item" id="htoo_list">Dapibus ac facilisis in</li>
-		  <li class="list-group-item" id="htoo_list">Morbi leo risus</li>
-		  <li class="list-group-item" id="htoo_list">Porta ac consectetur ac</li>
-		  <li class="list-group-item" id="htoo_list">Vestibulum at eros</li>
-		</ul>
-	</div>
-	<div class="col-md-4">
-		<ul class="list-group">
-		  <li class="list-group-item">Cras justo odio</li>
-		  <li class="list-group-item">Dapibus ac facilisis in</li>
-		  <li class="list-group-item">Morbi leo risus</li>
-		  <li class="list-group-item">Porta ac consectetur ac</li>
-		  <li class="list-group-item">Vestibulum at eros</li>
-		</ul>
-	</div>
-	<div class="col-md-4">
-		<ul class="list-group">
-		  <li class="list-group-item">Cras justo odio</li>
-		  <li class="list-group-item">Dapibus ac facilisis in</li>
-		  <li class="list-group-item">Morbi leo risus</li>
-		  <li class="list-group-item">Porta ac consectetur ac</li>
-		  <li class="list-group-item">Vestibulum at eros</li>
-		</ul>
-	</div>
+<% max_level = Spree::Config[:max_level_in_taxons_menu] || 1 %>
+   <div class="col-md-12" id="htoo_bigfilter" data-hook> 
+
+		   <% @taxonomies.each do |taxonomy| %>
+		    <% cache [I18n.locale, taxonomy, max_level, @taxon] do %>
+		      <% if taxonomy.root.children.any? %>
+				<div class="col-md-4">
+					<ul class="list-group">
+					  <li class="list-group-item">
+					  	<p style="font-size:16px;font-weight: 900;"><%= Spree.t(:shop_by_taxonomy, taxonomy: taxonomy.name) %></p>
+					  </li>
+					  <%= taxons_tree(taxonomy.root, @taxon, max_level) %>
+					</ul>
+				</div>
+			  <% end %>
+		  <% end %>
+		<% end %>
+
+		<div class="col-md-4">
+					<p style="font-size:16px;font-weight: 900;">
+						Tags
+					</p>
+		</div>
+
 	<br>
 </div>
-
 
 
 
@@ -158,3 +171,19 @@ $("#htoo_filterbtn2").click(function(){
 
 
 </script>
+
+
+<style type="text/css">
+	
+.list-group .list-group-item{
+		background-color: #f5f5f5;
+		border-color: none;
+		border-style: none;
+		margin-top: -10px;
+		  text-decoration: none;
+		
+	}
+
+
+
+</style>

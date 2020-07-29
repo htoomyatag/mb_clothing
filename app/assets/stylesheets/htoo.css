@@ -166,47 +166,41 @@
 #htoo_bigfilter {
   padding-top: 40px;
   display: none;
-  background-color: #e6e6e6;
+  background-color: #f5f5f5;
   margin-bottom: 55px;
 }
 
 
+#htoo_styleheader{
 
-
-#htoo_list{
-
-  background-color: #e6e6e6;
-  border: none;
-  color: #aaa;
-  font-size: 16px;
-  margin-top: -10px;
-}
-
-
-
-#htoo_list_head{
-
-  background-color: #e6e6e6;
-  border: none;
-  color: #333;
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 900;
-}
-
-
-
-#htoo_list:hover{
-
-    color: #6c7ae0;
-    cursor:pointer;
-    text-decoration-line: underline;
-
-
+  font-size: 28px;
+line-height: 1.1;
+font-weight: 900;
 
 }
 
 
-#htoo_listbox {
-  margin-top: -20px;
+
+#htoo_styletext {
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+
+#style_cateback{
+   background-image: url(/assets/banner-02.jpg);
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ 
+}
+
+
+
+#style_catebackbody{
+  height: 250px;
 }

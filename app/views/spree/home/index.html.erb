@@ -29,6 +29,12 @@
   			<span class="glyphicon glyphicon-filter" aria-hidden="true"></span> Filter
 		</button>
 
+
+		<button type="button" class="btn btn-default" id="htoo_filterbtn2" style="display: none;">
+  			<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Filter
+		</button>
+
+
 	
 
 
@@ -52,13 +58,47 @@
     <% end %>
  
 </div><!-- /.row -->
+<br>
+<div class="col-md-12" id="htoo_bigfilter">
+	
+    
+	<div class="col-md-4">
+
+		<ul class="list-group" id="htoo_listbox">
+			
+		  <li class="list-group-item" id="htoo_list_head">Sort By</li>
+		  <li class="list-group-item" id="htoo_list">Cras justo odio</li>
+		  <li class="list-group-item" id="htoo_list">Dapibus ac facilisis in</li>
+		  <li class="list-group-item" id="htoo_list">Morbi leo risus</li>
+		  <li class="list-group-item" id="htoo_list">Porta ac consectetur ac</li>
+		  <li class="list-group-item" id="htoo_list">Vestibulum at eros</li>
+		</ul>
+	</div>
+	<div class="col-md-4">
+		<ul class="list-group">
+		  <li class="list-group-item">Cras justo odio</li>
+		  <li class="list-group-item">Dapibus ac facilisis in</li>
+		  <li class="list-group-item">Morbi leo risus</li>
+		  <li class="list-group-item">Porta ac consectetur ac</li>
+		  <li class="list-group-item">Vestibulum at eros</li>
+		</ul>
+	</div>
+	<div class="col-md-4">
+		<ul class="list-group">
+		  <li class="list-group-item">Cras justo odio</li>
+		  <li class="list-group-item">Dapibus ac facilisis in</li>
+		  <li class="list-group-item">Morbi leo risus</li>
+		  <li class="list-group-item">Porta ac consectetur ac</li>
+		  <li class="list-group-item">Vestibulum at eros</li>
+		</ul>
+	</div>
+	<br>
+</div>
 
 
 
 
-
-
-<div style="height: 60px;"></div>
+<div style="height: 55px;"></div>
 <div class="row" >
 
 <div data-hook="homepage_products">
@@ -74,7 +114,7 @@
 
 
 <script type="text/javascript">
-	
+//search btn func	
 $("#htoo_searchbtn").click(function(){
 
   $("#htoo_searchbtn").hide();
@@ -93,6 +133,27 @@ $("#htoo_searchbtn2").click(function(){
 
 
 
+
+//filter btn func	
+
+
+
+
+$("#htoo_filterbtn").click(function(){
+
+  $("#htoo_filterbtn").hide();
+  $("#htoo_filterbtn2").show();
+  $("#htoo_bigfilter").show( "slow" );
+});
+
+
+
+$("#htoo_filterbtn2").click(function(){
+
+  $("#htoo_filterbtn2").hide();
+  $("#htoo_filterbtn").show();
+  $("#htoo_bigfilter").hide( "slow" );
+});
 
 
 

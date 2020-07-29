@@ -109,14 +109,14 @@
 
 
 
-#htoo_filterbtn{
+#htoo_filterbtn, #htoo_filterbtn2{
   float: right;
   margin-left: 10px;
    color: #999;
 }
 
 
-#htoo_filterbtn:hover{
+#htoo_filterbtn:hover, #htoo_filterbtn2:hover {
 
     color: white;
     cursor:pointer;
@@ -144,7 +144,14 @@
 }
 
 #htoo_searchbtn2{
-      color: white;
+    color: white;
+    cursor:pointer;
+    background-color: #6c7ae0;
+
+}
+
+#htoo_filterbtn2{
+    color: white;
     cursor:pointer;
     background-color: #6c7ae0;
 
@@ -156,4 +163,50 @@
 }
 
 
+#htoo_bigfilter {
+  padding-top: 40px;
+  display: none;
+  background-color: #e6e6e6;
+  margin-bottom: 55px;
+}
 
+
+
+
+#htoo_list{
+
+  background-color: #e6e6e6;
+  border: none;
+  color: #aaa;
+  font-size: 16px;
+  margin-top: -10px;
+}
+
+
+
+#htoo_list_head{
+
+  background-color: #e6e6e6;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 900;
+}
+
+
+
+#htoo_list:hover{
+
+    color: #6c7ae0;
+    cursor:pointer;
+    text-decoration-line: underline;
+
+
+
+}
+
+
+#htoo_listbox {
+  margin-top: -20px;
+}

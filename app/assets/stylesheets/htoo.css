@@ -43,7 +43,7 @@
 
 #spree-header .nav a{
   color: #333;
-     text-decoration: none;
+  text-decoration: none;
 }
 
 
@@ -51,8 +51,109 @@
 
     
     color: #6c7ae0;
-     text-decoration:none; !important
-        font-weight:bold; !important
-        cursor:default; !important
+    text-decoration:none; !important
+    font-weight:bold; !important
+    cursor:default; !important
 
 }
+
+.htoo_subheadera{
+   font-size: 15px;
+    line-height: 1.2;
+    color:#333;
+    text-decoration-line: underline;
+}
+
+.htoo_subheader{
+   font-size: 15px;
+    line-height: 1.2;
+    color:#9d9d9d;
+    padding-left: 25px;
+}
+
+
+
+.htoo_subheader:hover{
+
+    color: #333;
+    cursor:pointer;
+
+
+
+}
+
+#htoo_producthead {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+
+
+#htoo_producttitle{
+    font-size: 14px;
+    line-height: 1.466667;
+    color: #999;
+    text-align: left;
+    padding-top: 20px;
+}
+
+
+#htoo_productprice{
+    font-size: 14px;
+    line-height: 1.466667;
+    color: #212529;
+    text-align: left;
+}
+
+
+
+#htoo_filterbtn{
+  float: right;
+  margin-left: 10px;
+   color: #999;
+}
+
+
+#htoo_filterbtn:hover{
+
+    color: white;
+    cursor:pointer;
+    background-color: #6c7ae0;
+
+
+
+}
+
+#htoo_searchbtn, #htoo_searchbtn2{
+  float: right;
+  margin-left: 10px;
+   color: #999;
+}
+
+
+#htoo_searchbtn:hover, #htoo_searchbtn2:hover{
+
+    color: white;
+    cursor:pointer;
+    background-color: #6c7ae0;
+
+
+
+}
+
+#htoo_searchbtn2{
+      color: white;
+    cursor:pointer;
+    background-color: #6c7ae0;
+
+}
+
+#htoo_bigsearch {
+  padding-top: 30px;
+  display: none;
+}
+
+
+

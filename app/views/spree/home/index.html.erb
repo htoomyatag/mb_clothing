@@ -2,15 +2,98 @@
 <% @body_id = 'home-page' %>
 
 
-<br><br><br><br><br><br>
+<div style="height: 60px;">
+	
 
-<h3>PRODUCT OVERVIEW</h3>
-<ul class="nav nav-pills" role="tablist">
-  <li role="presentation" class="active"><a href="#">All Products <span class="badge">42</span></a></li>
-  <li role="presentation"><a href="#">Women</a></li>
-  <li role="presentation"><a href="#">Men</a></li>
-  <li role="presentation"><a href="#">Bag</a></li>
-  <li role="presentation"><a href="#">Shoes</a></li>
-  <li role="presentation"><a href="#">Watches</a></li>
-  
-</ul>
+
+
+</div>
+<h3 id="htoo_producthead">PRODUCT OVERVIEW </h3>
+<h5>
+		<a href="#" class="htoo_subheadera">All Products</a>
+		<a href="#" class="htoo_subheader">Women</a>
+		<a href="#" class="htoo_subheader">Men</a>
+		<a href="#" class="htoo_subheader">Bag</a>
+		<a href="#" class="htoo_subheader">Shoes</a>
+		<a href="#" class="htoo_subheader">Watches</a>
+
+		<button type="button" class="btn btn-default" id="htoo_searchbtn">
+  			<span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+		</button>
+
+		<button type="button" class="btn btn-default" id="htoo_searchbtn2" style="display: none;">
+  			<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Search
+		</button>
+
+		<button type="button" class="btn btn-default" id="htoo_filterbtn">
+  			<span class="glyphicon glyphicon-filter" aria-hidden="true"></span> Filter
+		</button>
+
+	
+
+
+
+
+</h5>
+
+<div class="row"  id="htoo_bigsearch">
+
+  	<% @taxons = @taxon && @taxon.parent ? @taxon.parent.children : Spree::Taxon.roots %>
+	<%= form_tag spree.products_path, method: :get, class: "col-lg-12" do %>
+    <div class="input-group">
+      <span class="input-group-btn" >
+        	<button class="btn btn-default" type="button" style="height: 60px;border-right: none;">	
+        		<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        	</button>
+        
+      </span>
+      <%= search_field_tag :keywords, params[:keywords], placeholder: Spree.t(:search), class: "form-control", style:"height: 60px;" %>
+    </div><!-- /input-group -->
+    <% end %>
+ 
+</div><!-- /.row -->
+
+
+
+
+
+
+<div style="height: 60px;"></div>
+<div class="row" >
+
+<div data-hook="homepage_products">
+  <% cache(cache_key_for_products) do %>
+   <%= render partial: 'spree/shared/products', locals: { products: @products } %>
+  <% end %>
+-</div>
+
+
+</div>
+
+
+
+
+<script type="text/javascript">
+	
+$("#htoo_searchbtn").click(function(){
+
+  $("#htoo_searchbtn").hide();
+  $("#htoo_searchbtn2").show();
+  $("#htoo_bigsearch").show( "slow" );
+});
+
+
+
+$("#htoo_searchbtn2").click(function(){
+
+  $("#htoo_searchbtn2").hide();
+  $("#htoo_searchbtn").show();
+  $("#htoo_bigsearch").hide( "slow" );
+});
+
+
+
+
+
+
+</script>

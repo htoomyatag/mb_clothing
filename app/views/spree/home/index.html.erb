@@ -8,27 +8,30 @@
 <div style="height: 160px;"  ></div>
 
 <div class="row" >
-	<div class="col-md-4" >
+	<div class="col-md-4" id="htoo_casual">
 		<div class="panel panel-default" id="style_cateback" >	
 		  <div class="panel-body" id="style_catebackbody">
 			  <p id="htoo_styleheader">Casual</p>
 			  <p id="htoo_styletext"> &nbsp;Style 2020</p>
+			  <p id="htoo_stylefooter_casual">SHOP NOW</p>
 		  </div>
 		</div> 
 	</div>
-	<div class="col-md-4" >
+	<div class="col-md-4" id="htoo_smart">
 		<div class="panel panel-default" id="style_cateback" >	
 		  <div class="panel-body" id="style_catebackbody">
 			  <p id="htoo_styleheader">Smart</p>
 			  <p id="htoo_styletext"> &nbsp;Style 2020</p>
+			  <p id="htoo_stylefooter_smart">SHOP NOW</p>
 		  </div>
 		</div> 
 	</div>
-		<div class="col-md-4" >
+		<div class="col-md-4" id="htoo_elegant" >
 		<div class="panel panel-default" id="style_cateback" >	
 		  <div class="panel-body" id="style_catebackbody">
 			  <p id="htoo_styleheader">Elegant</p>
 			  <p id="htoo_styletext"> &nbsp;Style 2020</p>
+			  <p id="htoo_stylefooter_elegant">SHOP NOW</p>
 		  </div>
 		</div> 
 	</div>
@@ -167,6 +170,40 @@ $("#htoo_filterbtn2").click(function(){
   $("#htoo_filterbtn").show();
   $("#htoo_bigfilter").hide( "slow" );
 });
+
+// on hover
+
+
+
+$("#htoo_casual").mouseover(function(){
+     $("#htoo_stylefooter_casual").fadeIn();
+ });
+
+ $("#htoo_casual").mouseleave(function(){
+      $("#htoo_stylefooter_casual").fadeOut();
+  });
+
+
+
+
+$("#htoo_smart").mouseover(function(){
+     $("#htoo_stylefooter_smart").fadeIn();
+ });
+
+ $("#htoo_smart").mouseleave(function(){
+      $("#htoo_stylefooter_smart").fadeOut();
+  });
+
+
+
+$("#htoo_elegant").mouseover(function(){
+     $("#htoo_stylefooter_elegant").fadeIn();
+ });
+
+ $("#htoo_smart").mouseleave(function(){
+      $("#htoo_stylefooter_elegant").fadeOut();
+  });
+
 
 
 

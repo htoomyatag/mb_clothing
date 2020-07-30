@@ -17,7 +17,7 @@
 
         <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
 
-        <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
+        <div id="content" class="<%= !content_for?(:sidebar) ? "row" : "col-sm-8 col-md-9" %>" data-hook>
           <%= flash_messages %>
           <%= yield %>
         </div>
@@ -73,8 +73,7 @@
       <script>document.write(new Date().getFullYear());</script> All rights reserved | This store is made with 
       <span class="glyphicon glyphicon-heart" aria-hidden="true"></span> by 
       <a href="https://mimiberryclothing.com" target="_blank">
-            <span style="color:blue;">MIMI</span>
-            <span style="color:red;">BERRY</span>
+              <%=image_tag 'logo-02.png'%>
       </a>
   </p>
 

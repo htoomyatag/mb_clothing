@@ -1,5 +1,5 @@
 #htoo_topnav {
-	border-right: 1px solid rgba(255,255,255,0.3);
+    border-left: 1px solid rgba(255,255,255,0.3);
 }
 
 
@@ -237,4 +237,12 @@ footer {
 
 #footer_header{
   font-weight: 900;
+}
+
+
+#htoo_navheader{
+  position: relative;
+  left: 30px;
+  top: 15px;
+  color: #9d9d9d;
 }

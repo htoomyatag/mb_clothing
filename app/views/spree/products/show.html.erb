@@ -15,9 +15,7 @@
           </div>
         </div>
 
-        <div data-hook="product_properties">
-          <%= render partial: 'properties' %>
-        </div>
+  
 
         <div data-hook="promotions">
           <%= render partial: 'promotions' %>
@@ -30,10 +28,7 @@
         <div id="product-description" data-hook="product_description">
           <h1 class="product-title" itemprop="name"><%= @product.name %></h1>
 
-          <div class="well" itemprop="description" data-hook="description">
-            <%= product_description(@product) %>
-          </div>
-
+     
           <div id="cart-form" data-hook="cart_form">
             <%= render partial: 'cart_form' %>
           </div>
@@ -46,3 +41,88 @@
     </div>
   </div>
 <% end %>
+
+
+
+<div class="panel panel-default">
+  <div class="panel-body">
+     <p id="product_desc"><br><br>
+          <span id="product_desctlt">Description</span> 
+          <span id="product_desctlt2">Additional information</span>
+     </p>
+
+     <div class="row">
+          <div class="col-md-2"></div>
+           <div class="col-md-8">
+               <br>
+               <p id="product_text_message" data-hook="description">
+                  <%= product_description(@product) %>
+               </p>
+
+           </div>
+           <div class="col-md-2"></div>
+
+            <div class="col-md-4"></div>
+           <div class="col-md-4">
+
+                <table id="product-properties" style="width:100%;display: none;">
+                  <tbody>
+                    <% @product_properties.each do |product_property| %>
+                      <% css_class = cycle('even', 'odd', name: "properties") %>
+                      <tr>
+                        <td id="productpro_desctlt"><%= product_property.property.presentation %></td>
+                        <td id="productpro_desctlt"> <%= product_property.value %></td>
+                      </tr>
+                    <% end %>
+                    <% reset_cycle('properties') %>
+                  </tbody>
+                </table>
+
+           </div>
+           <div class="col-md-4"></div>
+
+
+      </div><br>
+
+
+  
+
+
+
+
+
+
+
+
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  
+
+
+  //hide and show desc
+$("#product_desctlt").click(function(){
+  $("#product-properties").hide( "slow" );
+  $("#product_text_message").show("slow" );
+  $("#product_desctlt").css("color", "#333");
+  $("#product_desctlt2").css("color", "#888");
+});
+
+
+  //hide and show desc
+$("#product_desctlt2").click(function(){
+  $("#product_text_message").hide("slow" );
+  $("#product-properties").show( "slow" );
+  $("#product_desctlt").css("color", "#888");
+  $("#product_desctlt2").css("color", "#333");
+});
+
+
+
+
+
+
+
+</script>

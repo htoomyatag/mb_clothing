@@ -246,3 +246,54 @@ footer {
   top: 15px;
   color: #9d9d9d;
 }
+
+#product_desc{
+  text-align:center;
+
+}
+
+
+#product_desctlt{
+  margin-right: 20px;
+   color:#333;
+  font-size: 16px;
+
+}
+
+
+#product_desctlt:hover{
+      color:#333;
+    cursor: pointer;
+  
+}
+
+
+
+#product_desctlt2{
+  color: #888;
+    font-size: 16px;
+}
+
+
+#product_desctlt2:hover{
+      color:#333;
+    cursor: pointer;
+  
+}
+
+#productpro_desctlt{
+  color: #888;
+  padding-top: 5px;
+  font-size: 14px;
+
+
+}
+
+#product_text_message{
+   color: #888;
+   font-size: 14px;
+
+
+}
+
+

@@ -1,3 +1,5 @@
+<br><br><br><br><br><br>
+
 <% @body_id = 'product-details' %>
 
 <% cache cache_key_for_product do %>
@@ -26,7 +28,7 @@
     <div class="col-md-8 col-sm-7" data-hook="product_right_part">
       <div data-hook="product_right_part_wrap">
         <div id="product-description" data-hook="product_description">
-          <h1 class="product-title" itemprop="name"><%= @product.name %></h1>
+          <h1 itemprop="name" id="htoo_product_title"><%= @product.name %></h1>
 
      
           <div id="cart-form" data-hook="cart_form">
@@ -83,19 +85,64 @@
 
 
       </div><br>
-
-
-  
-
-
-
-
-
-
-
-
   </div>
 </div>
+
+    <div class="panel panel-default" style="background-color: #f5f5f0;">
+          <div class="panel-body">
+                <p id="sku_title"> SKU: <%= @product.sku %> , 
+               Categories: <%= @product.category.name %>
+                 </p>
+          </div>
+   </div>
+   <br>
+
+   <div class="col-md-12" style="height: 100px;">
+     <p id="productrelate"> Related Products </p>
+  </div>
+
+
+     <div class="row">
+
+          <div class="col-md-3">
+                 <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                      <h3>Thumbnail label</h3>
+                      <p>...</p>
+                    </div>
+                  </div>
+          </div>
+                    <div class="col-md-3">
+                 <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                      <h3>Thumbnail label</h3>
+                      <p>...</p>
+                    </div>
+                  </div>
+          </div>
+                    <div class="col-md-3">
+                 <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                      <h3>Thumbnail label</h3>
+                      <p>...</p>
+                    </div>
+                  </div>
+          </div>
+                    <div class="col-md-3">
+                 <div class="thumbnail">
+                    <img src="..." alt="...">
+                    <div class="caption">
+                      <h3>Thumbnail label</h3>
+                      <p>...</p>
+                    </div>
+                  </div>
+          </div>
+      
+        
+      </div>
 
 
 <script type="text/javascript">

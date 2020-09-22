@@ -297,3 +297,40 @@ footer {
 }
 
 
+#man_navcont {
+
+
+background-color: #fff;
+height: 80px;
+border-style: solid;
+border-right: transparent;
+border-left: transparent;
+border-bottom-color:#f8f8f8;
+   
+
+
+}
+
+
+
+#htoo_product_title {
+    color: #333;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+
+#sku_title{
+     color: #888;
+    font-size: 14px;
+    text-align:center;
+}
+
+
+#productrelate{
+    
+
+    font-size: 36px;
+    line-height: 1.2;
+      text-align:center;
+}

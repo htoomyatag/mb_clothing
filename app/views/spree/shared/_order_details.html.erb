@@ -1,9 +1,6 @@
 <div class="row steps-data">
   <% if order.has_step?("address") %>
-    <div class="col-md-3 col-sm-3 col-xs-6" data-hook="order-bill-address">
-      <h4><%= Spree.t(:billing_address) %> <%= link_to "(#{Spree.t(:edit)})", checkout_state_path(:address) unless order.completed? %></h4>
-      <%= render 'spree/shared/address', address: order.bill_address %>
-    </div>
+   
 
     <% if order.has_step?("delivery") %>
       <div class="col-md-3 col-sm-3 col-xs-6" data-hook="order-ship-address">
@@ -33,6 +30,12 @@
       </div>
     </div>
   <% end %>
+
+   <div class="col-md-3 col-sm-3 col-xs-6" data-hook="order-bill-address">
+     
+    </div>
+
+
 </div>
 
 <hr />
@@ -65,7 +68,6 @@
         </td>
         <td data-hook="order_item_description">
           <h4><%= item.name %></h4>
-          <%= truncate(item.description, length: 100) %>
           <%= "(" + item.variant.options_text + ")" unless item.variant.option_values.empty? %>
         </td>
         <td data-hook="order_item_price" class="lead text-primary price"><span><%= item.single_money.to_html %></span></td>

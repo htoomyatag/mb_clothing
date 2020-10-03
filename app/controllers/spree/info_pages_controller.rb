@@ -6,7 +6,23 @@ module Spree
 
      def about_us
   
-  end
+  	 end
+
+  	 def faq
+  
+  	 end
+
+  	 def contact
+  
+  	 end
+
+  	 def return_policy
+  
+  	 end
+
+  	  def shipping
+  
+  	 end
 
   end
 end

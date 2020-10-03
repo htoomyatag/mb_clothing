@@ -11,6 +11,11 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   Spree::Core::Engine.add_routes do
     get '/about_us', to: 'info_pages#about_us', as: :about_us
+    get '/faq', to: 'info_pages#faq', as: :faq
+    get '/contact', to: 'info_pages#contact', as: :contact
+    get '/return_policy', to: 'info_pages#return_policy', as: :return_policy
+    get '/shipping', to: 'info_pages#shipping', as: :shipping
+
   end
 
 

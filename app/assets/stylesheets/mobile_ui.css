@@ -50,11 +50,118 @@
 	}
 
 
+#mobilecert_panel{
+		position: relative;
+		left: 20px;
+		width: 300px;
+
+}
+
 	#mobilfaq{
 	  font-size: 10px;
 	  width: 330px;
 	  position: relative;
 	  left: 30px;
 	}
+
+
+	#mobilaboutus{
+	  font-size: 10px;
+	  width: 300px;
+	  position: relative;
+	  left: 30px;
+
+	}
+
+	#mobilaboutus_title{
+		position: relative;
+		left:20px;
+	}
+
+	#aboutus_div{
+		  width: 300px;
+
+	}
+
+	#identifier{
+		width: 200px;
+	}
+
+	#carousel-example-generic , #three_htoo_casual, #htoo_producthead, #htoo_bigsearch, #mobileoverview{
+		display: none;
+	}
+
+	#mymobile_product{
+		width: 100px;
+	}
+
+	#product_image_ok{
+ height: 240px;
+ text-align: center;
+ 	
+}
+
+
+#mobileproduct_div{
+	position: relative;
+	left: 50px;
+	width: 330px;
+
+
+}
+
+#htoo_producttitle, #htoo_productprice{
+	text-align:center;
+	font-size: 14px;
+
+}
+
+
+.navbar-inverse .navbar-toggle{
+	display: none;
+	height: 100px;
+}
+
+.navbar .navbar-toggle{
+	display: none;
+	height: 180px;
+	position: relative;
+	bottom: 50px;
+}
+
+#mobilenav{
+	height: 50px;
+}
+
+#product_showmobile{
+
+	width: 330px;
+	position:relative;
+	left: 35px;
+}
+
+#htoo_product_title{
+	font-size: 12px;
+	position: relative;
+
+}
+
+#productmobile_detail{
+		position: relative;
+	left: 30px;
+
+}
+
+#mobileaddocart{
+	width: 250px;
+}
+
+#mobileproduct_panel{
+	width: 330px;
+	position: relative;
+	left: 30px;
+	bottom: -10px;
+}
+	
 
 }

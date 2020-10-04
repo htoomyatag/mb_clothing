@@ -36,7 +36,7 @@
         <div id="product-price">
           <h3 class="product-section-title" id="htoo_product_title"><u><%= Spree.t(:price) %> </u></h3>
 
-          <span class="lead price selling" itemprop="price" content="<%= @product.price_in(current_currency).amount.to_d %>">
+          <span class="lead price selling" itemprop="price" content="<%= @product.price_in(current_currency).amount.to_d %>" id="mobile_price_product">
               <%= display_price(@product) %>
             </span>
             <span itemprop="priceCurrency" content="<%= current_currency %>"></span>
@@ -56,7 +56,7 @@
         </div>
 
         <% if @product.can_supply? %>
-          <div class="add-to-cart">
+          <div class="add-to-cart" id="mobileaddocart">
             <br />
             <div class="input-group">
               <%= number_field_tag :quantity, 1, class: 'title form-control', min: 1 %>

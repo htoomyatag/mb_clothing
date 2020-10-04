@@ -2,9 +2,10 @@
 
 <% @body_id = 'product-details' %>
 
+
 <% cache cache_key_for_product do %>
   <div data-hook="product_show" class="row" itemscope itemtype="https://schema.org/Product">
-    <div class="col-md-4 col-sm-5" data-hook="product_left_part">
+    <div class="col-md-4 col-sm-5" data-hook="product_left_part" id="product_showmobile">
       <div data-hook="product_left_part_wrap">
         <div id="product-images" data-hook="product_images">
           <div id="main-image" class="panel panel-default" data-hook>
@@ -25,19 +26,19 @@
       </div>
     </div>
 
-    <div class="col-md-8 col-sm-7" data-hook="product_right_part">
+    <div class="col-md-8 col-sm-7" data-hook="product_right_part" id="productmobile_detail">
       <div data-hook="product_right_part_wrap">
         <div id="product-description" data-hook="product_description">
           <h1 itemprop="name" id="htoo_product_title">
             <%= @product.name %> <br>
             <br>
-              ရန်ကုန်မြို့တွင်း အိမ်အရောက်ပို့ပေးတဲ့
-              Delivery Service ရှိပါတယ်ခင်ဗျာ။
+              ရန်ကုန်မြို့တွင်း အိမ်အရောက်ပို့ပေးတဲ့      <br>
+              Delivery Service ရှိပါတယ်ခင်ဗျာ။     <br>
               အော်ဒါမှာပြီး 7ရက်ဝန်းကျင်နေရင်
               ပို့ပေးပါတယ်။ <br>
               ရန်ကုန်မြို့တွင်း
-              အိမ်အရောက်ငွေချေစနစ်ပါ။
-              ပို့ခကတော့ ဘယ်နှစ်ထည်မှာယူယူ
+              အိမ်အရောက်ငွေချေစနစ်ပါ။     <br>
+              ပို့ခကတော့ ဘယ်နှစ်ထည်မှာယူယူ      <br>
               တစ်ကြောင်းစာပို့ခ
               ရန်ကုန်မြို့တွင်း ၂၅၀၀ကျပ် ပါ။
           </h1> 
@@ -55,7 +56,7 @@
 
 
 
-<div class="panel panel-default">
+<div class="panel panel-default" id="mobileproduct_panel">
   <div class="panel-body">
      <p id="product_desc"><br><br>
           <span id="product_desctlt">Description</span> 

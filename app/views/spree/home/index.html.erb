@@ -38,7 +38,7 @@
 </div>
 
 <br><br><br><br>
-<div class="row" >
+<div class="row" id="three_htoo_casual">
 	<div class="col-md-4" id="htoo_casual">
 		<div class="panel panel-default" id="style_cateback" >	
 		  <div class="panel-body" id="style_catebackbody">
@@ -69,7 +69,7 @@
 </div>
 
 
-
+<div id="mobileoverview">
 <h3 id="htoo_producthead">PRODUCT OVERVIEW </h3>
 <h5>
 		<a href="#" class="htoo_subheadera">All Products</a>
@@ -97,7 +97,7 @@
 		</button>
 
 </h5>
-
+</div>
 <div class="row"  id="htoo_bigsearch">
 
   	<% @taxons = @taxon && @taxon.parent ? @taxon.parent.children : Spree::Taxon.roots %>
@@ -148,11 +148,11 @@
 <div style="height: 55px;"></div>
 <div class="row" >
 
-<div data-hook="homepage_products">
+<div data-hook="homepage_products" id="mobileproduct_div">
   <% cache(cache_key_for_products) do %>
    <%= render partial: 'spree/shared/products', locals: { products: @products } %>
   <% end %>
--</div>
+</div>
 
 
 </div>

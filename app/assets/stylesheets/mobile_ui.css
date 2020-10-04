@@ -147,7 +147,7 @@
 }
 
 #productmobile_detail{
-		position: relative;
+	position: relative;
 	left: 30px;
 
 }
@@ -162,6 +162,90 @@
 	left: 30px;
 	bottom: -10px;
 }
+
+
+#cart-detail{
+
+	font-size: 8px;
+	position: relative;
+
 	
+
+
+
+
+}
+
+#mobileordertable{
+	width: 330px;
+	position: relative;
+	left: 30px;
+
+
+
+}
+
+
+
+#mobile_productname {
+	font-size: 9px;
+}
+
+#mobile_itemalltotal,
+#mobile_productdesc, 
+#mobile_itemprice, 
+#mobile_itemquantity, 
+#mobile_itemdelete,
+#mobiletotal,
+#mobilehead{
+	display: none;
+}
+
+#cart-item-image{
+	height: 30px;
+}
+
+
+
+#mobiletotalamount{
+	
+	position: relative;
+	text-align: center;
+}
+
+
+#mobile_remove_product, #mobitotalorder_amount{
+  display: block;
+}
+
+#mobitotalorder_amount{
+	text-align:center;
+	  background: yellow;
+	  font-size: 16px;
+	 width: 330px;
+	position: relative;
+	left: 30px;
+}
+
+
+#updateandcheckout {
+	position: relative;
+	right: 50px;
+}
+
+#update-button{
+	position: relative;
+	right: 150px;
+}
+
+#mobilecoupon{
+	display: none;
+}
+
+#clear_cart_link{
+	position: relative;
+	left: 10px;
+}
+
 
 }

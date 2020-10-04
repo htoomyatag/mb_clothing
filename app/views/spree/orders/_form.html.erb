@@ -1,6 +1,7 @@
 <%= render partial: 'spree/shared/error_messages', locals: { target: @order } %>
+
 <table class="table" id="cart-detail" data-hook>
-  <thead>
+  <thead id="mobilehead">
     <tr class="active" data-hook="cart_items_headers">
       <th class="cart-item-description-header" colspan="2"><%= Spree.t(:item) %></th>
       <th class="cart-item-price-header"><%= Spree.t(:price) %></th>
@@ -20,9 +21,10 @@
     </tr>
     <%= render "spree/orders/adjustments" %>
   <% end %>
-  <tr class="warning cart-total">
+  <tr class="warning cart-total" id="mobiletotal">
     <td colspan="4" align='right'><h5><%= Spree.t(:total) %></h5></td>
-    <td class="lead" colspan><%= order_form.object.display_total %></td>
+    <td class="lead" colspan ><%= order_form.object.display_total %></td>
     <td></td>
   </tr>
 </table>
+

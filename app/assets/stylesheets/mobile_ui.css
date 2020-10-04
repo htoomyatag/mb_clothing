@@ -1,0 +1,20 @@
+/* mobile css*/
+
+@media only screen and (max-width: 600px) {
+
+	#mobilerefund_headtext {
+		 position: relative;
+		 left: 50px;
+	}
+
+	#mobilerefund_secondtext{
+			 position: relative;
+		 left: 50px;
+		 font-size:12px;
+	}
+
+
+	#mobilerefund{
+		width: 300px;
+	}
+}

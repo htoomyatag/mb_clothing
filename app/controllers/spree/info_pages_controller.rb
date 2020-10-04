@@ -20,7 +20,7 @@ module Spree
   
   	 end
 
-  	  def shipping
+  	  def delivery
   
   	 end
 

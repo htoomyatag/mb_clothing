@@ -14,7 +14,7 @@ Rails.application.routes.draw do
     get '/faq', to: 'info_pages#faq', as: :faq
     get '/contact', to: 'info_pages#contact', as: :contact
     get '/return_policy', to: 'info_pages#return_policy', as: :return_policy
-    get '/shipping', to: 'info_pages#shipping', as: :shipping
+    get '/delivery', to: 'info_pages#delivery', as: :delivery
 
   end
 

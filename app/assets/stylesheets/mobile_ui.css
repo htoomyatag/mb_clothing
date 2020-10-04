@@ -8,7 +8,7 @@
 	}
 
 	#mobilerefund_secondtext{
-			 position: relative;
+		position: relative;
 		 left: 50px;
 		 font-size:12px;
 	}
@@ -17,4 +17,36 @@
 	#mobilerefund{
 		width: 300px;
 	}
+
+  #mobildeli{
+		width: 300px;
+	}
+
+
+
+	#mobiledeli_headtext{
+		 position: relative;
+		 left: 15px;
+		 font-size: 12px;
+
+	}
+
+  #mobiledeli_secondtext{
+		position: relative;
+		 left: 50px;
+		 font-size:12px;
+	}
+
+	#mobiledelitable_headtext td{
+		font-size: 8px;
+
+	}
+
+
+	#mobiledeli_panel {
+		position: relative;
+		left: 30px;
+		width: 330px;
+	}
+
 }

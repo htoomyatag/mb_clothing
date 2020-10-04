@@ -247,5 +247,9 @@
 	left: 10px;
 }
 
+.nav-pills {
+	display: none;
+}
+
 
 }

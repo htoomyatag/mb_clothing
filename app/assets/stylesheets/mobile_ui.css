@@ -49,4 +49,12 @@
 		width: 330px;
 	}
 
+
+	#mobilfaq{
+	  font-size: 10px;
+	  width: 330px;
+	  position: relative;
+	  left: 30px;
+	}
+
 }

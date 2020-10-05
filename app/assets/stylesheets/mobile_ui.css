@@ -252,4 +252,25 @@
 }
 
 
+#mobile_flowbutton{
+	display: block;
+	position: relative;
+
+}
+
+
+
+#mobile_cat{
+  position: relative;
+ left: 30px;
+}
+
+
+#mobile_acc{
+    position: relative;
+    left: 200px;
+}
+
+
+
 }

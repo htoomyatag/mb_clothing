@@ -8,8 +8,13 @@
   <head data-hook="inside_head">
     <%= render partial: 'spree/shared/head' %>
   </head>
+
+
+
+
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     <%= render partial: 'spree/shared/header' %>
+
 
     <div class="container">
       <div class="row" data-hook>
@@ -18,7 +23,9 @@
         <%= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
 
         <div id="content" class="<%= !content_for?(:sidebar) ? "row" : "col-sm-8 col-md-9" %>" data-hook>
+          
           <%= flash_messages %>
+          
           <%= yield %>
         </div>
 
@@ -31,7 +38,7 @@
 
   <div class="container"><br><br>
         <div class="col-md-4">
-           
+              <br>
               <h4 id="footer_header">CATEGORIES</h4><br>
               <h6>Casual Shirts </h6>
               <h6>Coats & Jackets</h6>
@@ -40,12 +47,14 @@
              
         </div>
         <div class="col-md-4">
+            <br>
               <h4 id="footer_header">HELP</h4><br>
               <h6><a href="/return_policy" id="navli2">Returns</a></h6>
               <h6><a href="/delivery" id="navli2">Delivery</a></h6>
               <h6><a href="/faq" id="navli2">FAQs</a></h6>
         </div>
         <div class="col-md-4">
+          <br>
               <h4 id="footer_header">GET IN TOUCH</h4><br>
               <h6> Any questions? Let us know in office at  </h6>
               <h6> No.1200, Bogyote St, North dagon 37ward, </h6> 

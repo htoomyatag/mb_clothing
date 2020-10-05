@@ -374,11 +374,16 @@ border-bottom-color:#f8f8f8;
 }
 
 #logook{
-  position: relative;bottom:2px;
+  position: relative;
+  bottom:10px;
 }
 
 
-#mobile_remove_product, #mobitotalorder_amount{
+#mobile_remove_product, #mobitotalorder_amount, #mobile_flowbutton, #cart-backordered-info{
   display: none;
 
+}
+
+#theli {
+  color: white;
 }

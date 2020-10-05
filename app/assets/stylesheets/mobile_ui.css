@@ -301,6 +301,68 @@
 
 }
 
+#checkout_form_address {
+	width:350px;
+	position: relative;
+	left: 20px;
+	bottom: -70px;
+	height: 800px;
+}
 
 
+#shipping_method{
+	width:330px;
+	position: relative;
+	left: 30px;
+	bottom: -70px;
+
+
+}
+
+#checkout-summary{
+	display: none;
+}
+
+#delsaveandcon {
+	position: relative;
+	bottom: -30px;
+	right: 15px;
+}
+
+#payment{
+	width:350px;
+	position: relative;
+	left: 20px;
+	bottom: -70px;
+}
+
+
+#paymentsaveandcont{
+		position: relative;
+	bottom: -30px;
+	right:15px;
+
+}
+
+#mobiemptycart{
+	text-align:center;
+}
+
+
+#sidebar {
+	left: 2px;
+	bottom: -70px;
+	height:100%;
+}
+
+
+#mobipricefilter, #pricesearbth{
+	display: none;
+}
+
+
+#mobiresponsive{
+ width: 100%;
+  height: auto;
+}
 }

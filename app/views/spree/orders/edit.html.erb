@@ -23,10 +23,8 @@
 
           <div class="links col-md-3 navbar-form pull-right text-right" data-hook="cart_buttons" id="updateandcheckout">
             <div class="form-group">
-              <%= button_tag class: 'btn btn-primary', id: 'update-button' do %>
-                <%= Spree.t(:update) %>
-              <% end %>
-              <%= button_tag class: 'btn btn-success', id: 'checkout-link', name: 'checkout' do %>
+            
+              <%= button_tag class: 'btn btn-success btn-lg btn-block', id: 'checkout-link', name: 'checkout' do %>
                 <%= Spree.t(:checkout) %>
               <% end %>
             </div>

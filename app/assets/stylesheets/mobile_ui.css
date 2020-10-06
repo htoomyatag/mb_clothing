@@ -23,7 +23,7 @@
 	#mobilerefund{
 		width: 300px;
 		position: relative;
-		bottom: -50px;
+		bottom: 50px;
 		height: 500px;
 	}
 
@@ -31,7 +31,7 @@
 		width: 300px;
 		height: 1800px;
 		position: relative;
-		bottom: -50px;
+		bottom: 50px;
 	}
 
 
@@ -74,7 +74,7 @@
 	  width: 330px;
 	  position: relative;
 	  left: 30px;
-	  bottom: -80px;
+	  bottom: 30px;
 	  height: 1500px;
 	  	}
 
@@ -83,7 +83,7 @@
 	  font-size: 10px;
 	  width: 300px;
 	  position: relative;
-	  top: 70px;
+	  top: -30px;
 	  left: 30px;
 	  height: 2200px;
 
@@ -133,16 +133,10 @@
 }
 
 
-.navbar-inverse .navbar-toggle{
-	display: none;
-	height: 100px;
-}
+
 
 .navbar .navbar-toggle{
-	display: none;
-	height: 180px;
-	position: relative;
-	bottom: 50px;
+background-color: black;
 }
 
 #mobilenav{
@@ -276,11 +270,6 @@
 }
 
 
-#mobile_flowbutton{
-	display: block;
-	position: relative;
-
-}
 
 
 

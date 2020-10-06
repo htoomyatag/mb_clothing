@@ -148,17 +148,14 @@ background-color: black;
 	width: 330px;
 	position:relative;
 	left: 35px;
+	bottom: 100px;
 }
 
-#htoo_product_title{
-	font-size: 12px;
-	position: relative;
-
-}
 
 #productmobile_detail{
 	position: relative;
 	left: 30px;
+	bottom: 120px;
 
 }
 
@@ -170,7 +167,7 @@ background-color: black;
 	width: 330px;
 	position: relative;
 	left: 30px;
-	bottom: -10px;
+	bottom: 100px;
 }
 
 
@@ -189,7 +186,7 @@ background-color: black;
 #mobileordertable{
 	width: 330px;
 	position: relative;
-	bottom: -70px;
+	bottom: 10px;
 	left: 30px;
 	height: 100%;
 
@@ -294,7 +291,7 @@ background-color: black;
 	width:350px;
 	position: relative;
 	left: 20px;
-	bottom: -70px;
+	bottom: 10px;
 	height: 800px;
 }
 
@@ -303,7 +300,7 @@ background-color: black;
 	width:330px;
 	position: relative;
 	left: 30px;
-	bottom: -70px;
+	bottom: 10px;
 
 
 }
@@ -322,7 +319,7 @@ background-color: black;
 	width:350px;
 	position: relative;
 	left: 20px;
-	bottom: -70px;
+	bottom: 10px;
 }
 
 
@@ -340,9 +337,14 @@ background-color: black;
 
 #sidebar {
 	left: 2px;
-	bottom: -70px;
+	bottom: -10px;
 	height:100%;
+	position: relative;
 }
+
+
+
+
 
 
 #mobipricefilter, #pricesearbth{
@@ -354,4 +356,44 @@ background-color: black;
  width: 100%;
   height: auto;
 }
+
+
+
+#mobicartcontainer{
+	position: relative;
+	bottom: 50px;
+	font-size: 12px;
+}
+
+#mobicartcontainer h1{
+	
+	font-size: 14px;
+	position: relative;
+	left:50px;
+}
+
+#registration{
+	padding: 20px;
+	position: relative;
+	top: -150px;
+}
+
+#content h1{
+	font-size: 22px;
+	position: relative;
+	left: 140px;
+
+}
+
+
+#htoo_product_title{
+	font-size: 13px;
+	position: relative;
+	left: 10px;
+	top: 5px;
+
+}
+
+
+
 }

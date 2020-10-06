@@ -9,11 +9,11 @@
 
     <br class="clear" />
 
-    <p data-hook="links">
-      <%= link_to Spree.t(:back_to_store), spree.root_path, class: "button" %>
+    <p data-hook="links" id="twobuttonstoreacc">
+      <%= link_to Spree.t(:back_to_store), spree.root_path, class: "btn btn-default" %>
       <% unless order_just_completed?(@order) %>
         <% if try_spree_current_user && respond_to?(:account_path) %>
-          <%= link_to Spree.t(:my_account), account_path, class: "button" %>
+          <%= link_to Spree.t(:my_account), account_path, class: "btn btn-default" %>
         <% end %>
       <% end %>
     </p>

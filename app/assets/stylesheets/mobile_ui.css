@@ -394,6 +394,39 @@ background-color: black;
 
 }
 
+#line-items{
+	font-size: 9px;
+	margin: 40px;
+	width: 300px;
+}
+
+#prouctnmhid, #prouctokprice{
+	display: none;
+}
+
+#prouctnm{
+	font-size: 9px;
+}
+
+#order-total ,#subtotal ,#price-adjustments ,#shipment-total ,#tax-adjustments ,#order-charges{
+	display: none;
+}
+
+#prouctnmop{
+	font-size: 13px;
+}
+
+#twobuttonstoreacc{
+	position: relative;
+	left: 30px;
+}
+
+#orderallover{
+	font-size: 11px;
+	width: 300px;
+	position: relative;
+	left: 70px;
+}
 
 
 }

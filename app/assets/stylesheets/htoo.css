@@ -389,3 +389,25 @@ border-bottom-color:#f8f8f8;
 }
 
 
+
+#carousel-example-generic{
+  position: relative;
+  top: -50px;
+}
+
+
+#order_summary{
+  position: relative;
+  bottom: 60px;
+}
+
+#products{
+  position: relative;
+  top: -100px;
+}
+
+
+#checkout{
+  position: relative;
+  top: -50px;
+}

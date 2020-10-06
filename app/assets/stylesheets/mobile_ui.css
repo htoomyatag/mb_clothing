@@ -434,5 +434,15 @@ background-color: black;
 	left: 70px;
 }
 
+.account-my-orders {
+	padding: 40px;
+	font-size: 8px;
+}
+
+
+#user-info{
+	font-size: 12px;
+	text-align:center;
+}
 
 }

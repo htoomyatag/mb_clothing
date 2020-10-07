@@ -107,15 +107,7 @@
    </div>
    <br>
 
-   <div class="col-md-12" style="height: 100px;">
-     <p id="productrelate"> Related Products </p>
-  </div>
-
-  <div data-hook="homepage_products">
-    <% cache(cache_key_for_products) do %>
-      <%= render partial: 'spree/shared/related_products', locals: { products: @products, taxon: @taxon } %>
-    <% end %>
-  </div>
+  
 
 
 

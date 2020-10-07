@@ -35,7 +35,7 @@
               <label>
                 <%= order_form.label :coupon_code %>
                 <%= order_form.text_field :coupon_code, size: '30', class: 'form-control' %>
-                <%= button_tag Spree.t(:coupon_code_apply), class: 'btn btn-default' %>
+                <%= button_tag Spree.t(:coupon_code_apply), class: 'btn btn-default', id:"coupon_codemobibtn" %>
               </label>
             </div>
           <% end %>

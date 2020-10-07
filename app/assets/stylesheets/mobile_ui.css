@@ -89,6 +89,16 @@
 
 	}
 
+		#mobilcontct{
+	  font-size: 10px;
+	  width: 300px;
+	  position: relative;
+	  top: -30px;
+	  left: 30px;
+	  height: 350px;
+
+	}
+
 	#mobilaboutus_title{
 		position: relative;
 		left:20px;
@@ -253,7 +263,21 @@ background-color: black;
 }
 
 #mobilecoupon{
-	display: none;
+	position: relative;
+	width: 360px;
+	bottom: -10px;
+
+}
+
+#order_coupon_code{
+	width: 150px;
+}
+
+#coupon_codemobibtn{
+	width: 100px;
+	position: relative;
+	top: -34px;
+    left: 170px;
 }
 
 #clear_cart_link{
@@ -284,6 +308,7 @@ background-color: black;
 #empty-cart{
 	position: relative;
 	height: 100px;
+	left:25px;
 
 }
 

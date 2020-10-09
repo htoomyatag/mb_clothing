@@ -1,419 +1,263 @@
 #htoo_topnav {
-    border-left: 1px solid rgba(255,255,255,0.3);
+     border-left: 1px solid;
 }
-
-
-#htoo_topnav_link {
-	font-size:13px;
-	color:#9d9d9d;
+ #htoo_topnav_link {
+     font-size:13px;
+     color:#9d9d9d;
 }
-
-
-#htoo_topnav_link:hover {
-  color: #6c7ae0;
+ #htoo_topnav_link:hover {
+     color: #6c7ae0;
 }
-
-
-
-
-.htoo_secondnav{
-
-    font-size: 14px;
-    color: #333;
-    padding: 5px 0px;
-
+ .htoo_secondnav{
+     font-size: 14px;
+     color: #333;
+     padding: 5px 0px;
 }
-
-
-.htoo_secondnav:hover{
-
-    color: #6c7ae0;
-
+ .htoo_secondnav:hover{
+     color: #6c7ae0;
 }
-
-.htoo_secondnav:hover{
-
-    color: #none;
-    cursor: pointer;
-
+ .htoo_secondnav:hover{
+     cursor: pointer;
 }
-
-
-
-
-#spree-header .nav a{
-  color: #333;
-  text-decoration: none;
+ #spree-header .nav a{
+     color: #333;
+     text-decoration: none;
 }
-
-
-#spree-header .nav a:hover{
-
-    
-    color: #6c7ae0;
-    text-decoration:none; !important
-    font-weight:bold; !important
-    cursor:default; !important
-
+ #spree-header .nav a:hover{
+     color: #6c7ae0;
+     text-decoration:none;
+     font-weight:bold;
+     cursor:default;
 }
-
-.htoo_subheadera{
-   font-size: 15px;
-    line-height: 1.2;
-    color:#333;
-    text-decoration-line: underline;
+ .htoo_subheadera{
+     font-size: 15px;
+     line-height: 1.2;
+     color:#333;
 }
-
-.htoo_subheader{
-   font-size: 15px;
-    line-height: 1.2;
-    color:#9d9d9d;
-    padding-left: 25px;
+ .htoo_subheader{
+     font-size: 15px;
+     line-height: 1.2;
+     color:#9d9d9d;
+     padding-left: 25px;
 }
-
-
-
-.htoo_subheader:hover{
-
-    color: #333;
-    cursor:pointer;
-
-
-
+ .htoo_subheader:hover{
+     color: #333;
+     cursor:pointer;
 }
-
-#htoo_producthead {
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 1.1;
-    text-transform: uppercase;
-    padding-bottom: 15px;
+ #htoo_producthead {
+     font-weight: 900;
+     font-size: 32px;
+     line-height: 1.1;
+     text-transform: uppercase;
+     padding-bottom: 15px;
 }
-
-
-#htoo_producttitle{
-    font-size: 14px;
-    line-height: 1.466667;
-    color: #999;
-    text-align: left;
-    padding-top: 20px;
+ #htoo_producttitle{
+     font-size: 14px;
+     line-height: 1.466667;
+     color: #999;
+     text-align: left;
+     padding-top: 20px;
 }
-
-
-#htoo_productprice{
-    font-size: 14px;
-    line-height: 1.466667;
-    color: #212529;
-    text-align: left;
+ #htoo_productprice{
+     font-size: 14px;
+     line-height: 1.466667;
+     color: #212529;
+     text-align: left;
 }
-
-
-
-#htoo_filterbtn, #htoo_filterbtn2{
-  float: right;
-  margin-left: 10px;
-   color: #999;
+ #htoo_filterbtn, #htoo_filterbtn2{
+     float: right;
+     margin-left: 10px;
+     color: #999;
 }
-
-
-#htoo_filterbtn:hover, #htoo_filterbtn2:hover {
-
-    color: white;
-    cursor:pointer;
-    background-color: #6c7ae0;
-
-
-
+ #htoo_filterbtn:hover, #htoo_filterbtn2:hover {
+     color: white;
+     cursor:pointer;
+     background-color: #6c7ae0;
 }
-
-#htoo_searchbtn, #htoo_searchbtn2{
-  float: right;
-  margin-left: 10px;
-   color: #999;
+ #htoo_searchbtn, #htoo_searchbtn2{
+     float: right;
+     margin-left: 10px;
+     color: #999;
 }
-
-
-#htoo_searchbtn:hover, #htoo_searchbtn2:hover{
-
-    color: white;
-    cursor:pointer;
-    background-color: #6c7ae0;
-
-
-
+ #htoo_searchbtn:hover, #htoo_searchbtn2:hover{
+     color: white;
+     cursor:pointer;
+     background-color: #6c7ae0;
 }
-
-#htoo_searchbtn2{
-    color: white;
-    cursor:pointer;
-    background-color: #6c7ae0;
-
+ #htoo_searchbtn2{
+     color: white;
+     cursor:pointer;
+     background-color: #6c7ae0;
 }
-
-#htoo_filterbtn2{
-    color: white;
-    cursor:pointer;
-    background-color: #6c7ae0;
-
+ #htoo_filterbtn2{
+     color: white;
+     cursor:pointer;
+     background-color: #6c7ae0;
 }
-
-#htoo_bigsearch {
-  padding-top: 30px;
-  display: none;
+ #htoo_bigsearch {
+     padding-top: 30px;
+     display: none;
 }
-
-
-#htoo_bigfilter {
-  padding-top: 40px;
-  display: none;
-  background-color: #f5f5f5;
-  margin-bottom: 55px;
+ #htoo_bigfilter {
+     padding-top: 40px;
+     display: none;
+     background-color: #f5f5f5;
+     margin-bottom: 55px;
 }
-
-
-#htoo_styleheader{
-
-  font-size: 28px;
-line-height: 1.1;
-font-weight: 900;
-
+ #htoo_styleheader{
+     font-size: 28px;
+     line-height: 1.1;
+     font-weight: 900;
 }
-
-
-
-#htoo_styletext {
-  font-size: 14px;
-  margin-top: -5px;
+ #htoo_styletext {
+     font-size: 14px;
+     margin-top: -5px;
 }
-
-
-#style_cateback{
-   background-image: url(/assets/banner-02.jpg);
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
- 
+ #style_cateback{
+     background-image: url(/assets/banner-02.jpg);
+     height: 100%;
+    /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
 }
-
-
-#style_cateback:hover{
-background-color:rgb(0,0,255);opacity:0.8;
-cursor: pointer;
- 
+ #style_cateback:hover{
+     background-color:rgb(0,0,255);
+    opacity:0.8;
+     cursor: pointer;
 }
-
-
-
-
-#style_catebackbody{
-  height: 250px;
+ #style_catebackbody{
+     height: 250px;
 }
-
-#htoo_stylefooter_casual, #htoo_stylefooter_elegant, #htoo_stylefooter_smart{
-
-    font-weight: 900;
-    font-size: 14px;
-    text-decoration: underline;
-    position: absolute;
-    bottom: 20px;
-    display: none;
-
+ #htoo_stylefooter_casual, #htoo_stylefooter_elegant, #htoo_stylefooter_smart{
+     font-weight: 900;
+     font-size: 14px;
+     text-decoration: underline;
+     position: absolute;
+     bottom: 20px;
+     display: none;
 }
-
-
-
-
-footer {
-   width: 100%;
-   background-color: #333;
-   color: white;
-   padding-bottom: 10px;
+ footer {
+     width: 100%;
+     background-color: #333;
+     color: white;
+     padding-bottom: 10px;
 }
-
-
-#footer_header{
-  font-weight: 900;
+ #footer_header{
+     font-weight: 900;
 }
-
-
-#htoo_navheader{
-  position: relative;
-  left: 30px;
-  top: 15px;
-  color: #9d9d9d;
+ #htoo_navheader{
+     position: relative;
+     left: 30px;
+     top: 15px;
+     color: #9d9d9d;
 }
-
-#product_desc{
-  text-align:center;
-
+ #product_desc{
+     text-align:center;
 }
-
-
-#product_desctlt{
-  margin-right: 20px;
-   color:#333;
-  font-size: 16px;
-
+ #product_desctlt{
+     margin-right: 20px;
+     color:#333;
+     font-size: 16px;
 }
-
-
-#product_desctlt:hover{
-      color:#333;
-    cursor: pointer;
-  
+ #product_desctlt:hover{
+     color:#333;
+     cursor: pointer;
 }
-
-
-
-#product_desctlt2{
-  color: #888;
-    font-size: 16px;
-}
-
-
-#product_desctlt2:hover{
-      color:#333;
-    cursor: pointer;
-  
-}
-
-#productpro_desctlt{
-  color: #888;
-  padding-top: 5px;
-  font-size: 14px;
-
-
-}
-
-#product_text_message{
-   color: #888;
-   font-size: 14px;
-
-
-}
-
-
-#man_navcont {
-
-
-background-color: #fff;
-height: 80px;
-border-style: solid;
-border-right: transparent;
-border-left: transparent;
-border-bottom-color:#f8f8f8;
-   
-
-
-}
-
-
-
-#htoo_product_title {
-    color: #333;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-
-#sku_title{
+ #product_desctlt2{
      color: #888;
-    font-size: 14px;
-    text-align:center;
+     font-size: 16px;
 }
-
-
-#productrelate{
-    
-
-    color: #333;
-    font-size: 18px;
-    text-align:center;
+ #product_desctlt2:hover{
+     color:#333;
+     cursor: pointer;
 }
-
-
-#spree-header .nav a:hover{
-    color:red;
-    cursor: pointer;
-    background: transparent;
-
-  
+ #productpro_desctlt{
+     color: #888;
+     padding-top: 5px;
+     font-size: 14px;
 }
-
-#navli{
-  font-size: 16px;
-  color: white;
+ #product_text_message{
+     color: #888;
+     font-size: 14px;
 }
-
-
-
-
-#navli2{
-  font-size: 12px;
-  color: white;
+ #man_navcont {
+     background-color: #fff;
+     height: 80px;
+     border-style: solid;
+     border-right: transparent;
+     border-left: transparent;
+     border-bottom-color:#f8f8f8;
 }
-
-
-#aboutus_div {
-  position: relative;
-  right: 20px;
+ #htoo_product_title {
+     color: #333;
+     font-size: 16px;
+     line-height: 1.5;
 }
-
-#product_image_ok{
- height: 240px;
+ #sku_title{
+     color: #888;
+     font-size: 14px;
+     text-align:center;
 }
-
-#desktt{
-
-  position:relative;top:10px;
-
+ #productrelate{
+     color: #333;
+     font-size: 18px;
+     text-align:center;
 }
-
-#logook{
-  position: relative;
-  bottom:10px;
+ #spree-header .nav a:hover{
+     color:red;
+     cursor: pointer;
+     background: transparent;
 }
-
-
-#mobile_remove_product, #mobitotalorder_amount, #mobile_flowbutton, #cart-backordered-info{
-  display: none;
-
+ #navli{
+     font-size: 16px;
+     color: white;
 }
-
-#theli {
-  color: white;
+ #navli2{
+     font-size: 12px;
+     color: white;
 }
-
-
-
-#carousel-example-generic{
-  position: relative;
-  top: -50px;
+ #aboutus_div {
+     position: relative;
+     right: 20px;
 }
-
-
-#order_summary{
-  position: relative;
-  bottom: 60px;
+ #product_image_ok{
+     height: 240px;
 }
-
-#products{
-  position: relative;
-  top: -100px;
+ #desktt{
+     position:relative;
+    top:10px;
 }
-
-
-#checkout{
-  position: relative;
-  top: -50px;
+ #logook{
+     position: relative;
+     bottom:10px;
 }
-
-
-
-#order-total-mobi ,#subtotal-mobi ,#price-adjustments-mobi ,#shipment-total-mobi ,#tax-adjustments-mobi ,#order-charges-mobi{
-  display: none;
+ #mobile_remove_product, #mobitotalorder_amount, #mobile_flowbutton, #cart-backordered-info{
+     display: none;
+}
+ #theli {
+     color: white;
+}
+ #carousel-example-generic{
+     position: relative;
+     top: -50px;
+}
+ #order_summary{
+     position: relative;
+     bottom: 60px;
+}
+ #products{
+     position: relative;
+     top: -100px;
+}
+ #checkout{
+     position: relative;
+     top: -50px;
+}
+ #order-total-mobi ,#subtotal-mobi ,#price-adjustments-mobi ,#shipment-total-mobi ,#tax-adjustments-mobi ,#order-charges-mobi{
+     display: none;
+}
+ #products{
+     position: relative;
+     top: -30px;
 }

@@ -1,473 +1,326 @@
 /* mobile css*/
-
-@media only screen and (max-width: 600px) {
-
-	html, body {
-    max-width: 100%;
-    overflow-x: hidden;
-}
-
-	#mobilerefund_headtext {
-		 position: relative;
-		 left: 50px;
-
-	}
-
-	#mobilerefund_secondtext{
-		position: relative;
-		 left: 50px;
-		 font-size:12px;
-	}
-
-
-	#mobilerefund{
-		width: 300px;
-		position: relative;
-		bottom: 50px;
-		height: 500px;
-	}
-
-  #mobildeli{
-		width: 300px;
-		height: 1800px;
-		position: relative;
-		bottom: 50px;
-	}
-
-
-
-	#mobiledeli_headtext{
-		 position: relative;
-		 left: 15px;
-		 font-size: 12px;
-
-	}
-
-  #mobiledeli_secondtext{
-		position: relative;
-		 left: 50px;
-		 font-size:12px;
-	}
-
-	#mobiledelitable_headtext td{
-		font-size: 8px;
-
-	}
-
-
-	#mobiledeli_panel {
-		position: relative;
-		left: 30px;
-		width: 330px;
-	}
-
-
-#mobilecert_panel{
-		position: relative;
-		left: 20px;
-		width: 300px;
-
-}
-
-	#mobilfaq{
-	  font-size: 10px;
-	  width: 330px;
-	  position: relative;
-	  left: 30px;
-	  bottom: 30px;
-	  height: 1500px;
-	  	}
-
-
-	#mobilaboutus{
-	  font-size: 10px;
-	  width: 300px;
-	  position: relative;
-	  top: -30px;
-	  left: 30px;
-	  height: 2200px;
-
-	}
-
-		#mobilcontct{
-	  font-size: 10px;
-	  width: 300px;
-	  position: relative;
-	  top: -30px;
-	  left: 30px;
-	  height: 350px;
-
-	}
-
-	#mobilaboutus_title{
-		position: relative;
-		left:20px;
-	}
-
-	#aboutus_div{
-		  width: 300px;
-
-	}
-
-	#identifier{
-		width: 200px;
-	}
-
-	#carousel-example-generic , #three_htoo_casual, #htoo_producthead, #htoo_bigsearch, #mobileoverview{
-		display: none;
-	}
-
-	#mymobile_product{
-		width: 100px;
-	}
-
-	#product_image_ok{
- height: 240px;
- text-align: center;
- 	
-}
-
-
-#mobileproduct_div{
-	position: relative;
-	left: 50px;
-	width: 330px;
-
-
-}
-
-#htoo_producttitle, #htoo_productprice{
-	text-align:center;
-	font-size: 14px;
-
-}
-
-
-
-
-.navbar .navbar-toggle{
-background-color: black;
-}
-
-#mobilenav{
-	height: 50px;
-}
-
-#product_showmobile{
-
-	width: 330px;
-	position:relative;
-	left: 35px;
-	bottom: 100px;
-}
-
-
-#productmobile_detail{
-	position: relative;
-	left: 30px;
-	bottom: 120px;
-
-}
-
-#mobileaddocart{
-	width: 250px;
-}
-
-#mobileproduct_panel{
-	width: 330px;
-	position: relative;
-	left: 30px;
-	bottom: 100px;
-}
-
-
-#cart-detail{
-
-	font-size: 8px;
-	position: relative;
-
-	
-
-
-
-
-}
-
-#mobileordertable{
-	width: 330px;
-	position: relative;
-	bottom: 10px;
-	left: 30px;
-	height: 100%;
-
-
-
-}
-
-
-
-#mobile_productname {
-	font-size: 9px;
-}
-
-#mobile_itemalltotal,
-#mobile_productdesc, 
-#mobile_itemprice, 
-#mobile_itemquantity, 
-#mobile_itemdelete,
-#mobiletotal,
-#mobilehead{
-	display: none;
-}
-
-#cart-item-image{
-	height: 30px;
-}
-
-
-
-#mobiletotalamount{
-	
-	position: relative;
-	text-align: center;
-}
-
-
-#mobile_remove_product, #mobitotalorder_amount{
-  display: block;
-}
-
-#mobitotalorder_amount{
-	text-align:center;
-	background: yellow;
-	font-size: 16px;
-	width: 330px;
-	position: relative;
-	left: 30px;
-	bottom:-60px;
-}
-
-
-#updateandcheckout {
-	position: relative;
-	right: 80px;
-	bottom:-60px;
-	height: 100px;
-	width: 300px;
-}
-
-#update-button{
-	position: relative;
-	right: 150px;
-		
-}
-
-#mobilecoupon{
-	position: relative;
-	width: 360px;
-	bottom: -10px;
-
-}
-
-#order_coupon_code{
-	width: 150px;
-}
-
-#coupon_codemobibtn{
-	width: 100px;
-	position: relative;
-	top: -34px;
-    left: 170px;
-}
-
-#clear_cart_link{
-	position: relative;
-	left: 10px;
-	bottom:-60px;
-}
-
-.nav-pills {
-	display: none;
-}
-
-
-
-
-
-#mobile_cat{
-  position: relative;
- left: 30px;
-}
-
-
-#mobile_acc{
-    position: relative;
-    left: 200px;
-}
-
-#empty-cart{
-	position: relative;
-	height: 100px;
-	left:25px;
-
-}
-
-#checkout_form_address {
-	width:350px;
-	position: relative;
-	left: 20px;
-	bottom: 10px;
-	height: 800px;
-}
-
-
-#shipping_method{
-	width:330px;
-	position: relative;
-	left: 30px;
-	bottom: 10px;
-
-
-}
-
-#checkout-summary{
-	display: none;
-}
-
-#delsaveandcon {
-	position: relative;
-	bottom: -30px;
-	right: 15px;
-}
-
-#payment{
-	width:350px;
-	position: relative;
-	left: 20px;
-	bottom: 10px;
-}
-
-
-#paymentsaveandcont{
-		position: relative;
-	bottom: -30px;
-	right:15px;
-
-}
-
-#mobiemptycart{
-	text-align:center;
-}
-
-
-#sidebar {
-	left: 2px;
-	bottom: -10px;
-	height:100%;
-	position: relative;
-}
-
-
-
-
-
-
-#mobipricefilter, #pricesearbth{
-	display: none;
-}
-
-
-#mobiresponsive{
- width: 100%;
-  height: auto;
-}
-
-
-
-#mobicartcontainer{
-	position: relative;
-	bottom: 50px;
-	font-size: 12px;
-}
-
-#mobicartcontainer h1{
-	
-	font-size: 14px;
-	position: relative;
-	left:50px;
-}
-
-#registration{
-	padding: 20px;
-	position: relative;
-	top: -150px;
-}
-
-#content h1{
-	font-size: 22px;
-	position: relative;
-	left: 140px;
-
-}
-
-
-#htoo_product_title{
-	font-size: 13px;
-	position: relative;
-	left: 10px;
-	top: 5px;
-
-}
-
-#line-items{
-	font-size: 9px;
-	margin: 40px;
-	width: 300px;
-}
-
-#prouctnmhid, #prouctokprice{
-	display: none;
-}
-
-#prouctnm{
-	font-size: 9px;
-}
-
-#order-total ,#subtotal ,#price-adjustments ,#shipment-total ,#tax-adjustments ,#order-charges{
-	display: none;
-}
-
-#prouctnmop{
-	font-size: 13px;
-}
-
-#twobuttonstoreacc{
-	position: relative;
-	left: 30px;
-}
-
-#orderallover{
-	font-size: 11px;
-	width: 300px;
-	position: relative;
-	left: 70px;
-}
-
-#thanksyou {
-	color: red;
-		position: relative;
-	left: 70px;
-}
-
-.account-my-orders {
-	padding: 40px;
-	font-size: 8px;
-}
-
-
-#user-info{
-	font-size: 12px;
-	text-align:center;
-}
-
+ @media only screen and (max-width: 600px) {
+     html, body {
+         max-width: 100%;
+         overflow-x: hidden;
+    }
+     #mobilerefund_headtext {
+         position: relative;
+         left: 50px;
+    }
+     #mobilerefund_secondtext{
+         position: relative;
+         left: 50px;
+         font-size:12px;
+    }
+     #mobilerefund{
+         width: 300px;
+         position: relative;
+         bottom: 50px;
+         height: 500px;
+    }
+     #mobildeli{
+         width: 300px;
+         height: 1800px;
+         position: relative;
+         bottom: 50px;
+    }
+     #mobiledeli_headtext{
+         position: relative;
+         left: 15px;
+         font-size: 12px;
+    }
+     #mobiledeli_secondtext{
+         position: relative;
+         left: 50px;
+         font-size:12px;
+    }
+     #mobiledelitable_headtext td{
+         font-size: 8px;
+    }
+     #mobiledeli_panel {
+         position: relative;
+         left: 30px;
+         width: 330px;
+    }
+     #mobilecert_panel{
+         position: relative;
+         left: 20px;
+         width: 300px;
+    }
+     #mobilfaq{
+         font-size: 10px;
+         width: 330px;
+         position: relative;
+         left: 30px;
+         bottom: 30px;
+         height: 1500px;
+    }
+     #mobilaboutus{
+         font-size: 10px;
+         width: 300px;
+         position: relative;
+         top: -30px;
+         left: 30px;
+         height: 2200px;
+    }
+     #mobilcontct{
+         font-size: 10px;
+         width: 300px;
+         position: relative;
+         top: -30px;
+         left: 30px;
+         height: 350px;
+    }
+     #mobilaboutus_title{
+         position: relative;
+         left:20px;
+    }
+     #aboutus_div{
+         width: 300px;
+    }
+     #identifier{
+         width: 200px;
+    }
+     #carousel-example-generic , #three_htoo_casual, #htoo_producthead, #htoo_bigsearch, #mobileoverview{
+         display: none;
+    }
+     #mymobile_product{
+         width: 100px;
+    }
+     #product_image_ok{
+         height: 240px;
+         text-align: center;
+    }
+     #mobileproduct_div{
+         position: relative;
+         left: 50px;
+         width: 330px;
+    }
+     #htoo_producttitle, #htoo_productprice{
+         text-align:center;
+         font-size: 14px;
+    }
+     .navbar .navbar-toggle{
+         background-color: black;
+    }
+     #mobilenav{
+         height: 50px;
+    }
+     #product_showmobile{
+         width: 330px;
+         position:relative;
+         left: 35px;
+         bottom: 100px;
+    }
+     #productmobile_detail{
+         position: relative;
+         left: 30px;
+         bottom: 120px;
+    }
+     #mobileaddocart{
+         width: 250px;
+    }
+     #mobileproduct_panel{
+         width: 330px;
+         position: relative;
+         left: 30px;
+         bottom: 100px;
+    }
+     #cart-detail{
+         font-size: 8px;
+         position: relative;
+    }
+     #mobileordertable{
+         width: 330px;
+         position: relative;
+         bottom: 10px;
+         left: 30px;
+         height: 100%;
+    }
+     #mobile_productname {
+         font-size: 9px;
+    }
+     #mobile_itemalltotal, #mobile_productdesc, #mobile_itemprice, #mobile_itemquantity, #mobile_itemdelete, #mobiletotal, #mobilehead{
+         display: none;
+    }
+     #cart-item-image{
+         height: 30px;
+    }
+     #mobiletotalamount{
+         position: relative;
+         text-align: center;
+    }
+     #mobile_remove_product, #mobitotalorder_amount{
+         display: block;
+    }
+     #mobitotalorder_amount{
+         text-align:center;
+         background: yellow;
+         font-size: 16px;
+         width: 330px;
+         position: relative;
+         left: 30px;
+         bottom:-60px;
+    }
+     #updateandcheckout {
+         position: relative;
+         right: 80px;
+         bottom:-60px;
+         height: 100px;
+         width: 300px;
+    }
+     #update-button{
+         position: relative;
+         right: 150px;
+    }
+     #mobilecoupon{
+         position: relative;
+         width: 360px;
+         bottom: -10px;
+    }
+     #order_coupon_code{
+         width: 150px;
+    }
+     #coupon_codemobibtn{
+         width: 100px;
+         position: relative;
+         top: -34px;
+         left: 170px;
+    }
+     #clear_cart_link{
+         position: relative;
+         left: 10px;
+         bottom:-60px;
+    }
+     .nav-pills {
+         display: none;
+    }
+     #mobile_cat{
+         position: relative;
+         left: 30px;
+    }
+     #mobile_acc{
+         position: relative;
+         left: 200px;
+    }
+     #empty-cart{
+         position: relative;
+         height: 100px;
+         left:25px;
+    }
+     #checkout_form_address {
+         width:350px;
+         position: relative;
+         left: 20px;
+         bottom: 10px;
+         height: 800px;
+    }
+     #shipping_method{
+         width:330px;
+         position: relative;
+         left: 30px;
+         bottom: 10px;
+    }
+     #checkout-summary{
+         display: none;
+    }
+     #delsaveandcon {
+         position: relative;
+         bottom: -30px;
+         right: 15px;
+    }
+     #payment{
+         width:350px;
+         position: relative;
+         left: 20px;
+         bottom: 10px;
+    }
+     #paymentsaveandcont{
+         position: relative;
+         bottom: -30px;
+         right:15px;
+    }
+     #mobiemptycart{
+         text-align:center;
+    }
+     #sidebar {
+         left: 2px;
+         bottom: -10px;
+         height:100%;
+         position: relative;
+    }
+     #mobipricefilter, #pricesearbth{
+         display: none;
+    }
+     #mobiresponsive{
+         width: 100%;
+         height: auto;
+    }
+     #mobicartcontainer{
+         position: relative;
+         bottom: 50px;
+         font-size: 12px;
+    }
+     #mobicartcontainer h1{
+         font-size: 14px;
+         position: relative;
+         left:50px;
+    }
+     #registration{
+         padding: 20px;
+         position: relative;
+         top: -150px;
+    }
+     #content h1{
+         font-size: 22px;
+         position: relative;
+         left: 140px;
+    }
+     #htoo_product_title{
+         font-size: 13px;
+         position: relative;
+         left: 10px;
+         top: 5px;
+    }
+     #line-items{
+         font-size: 9px;
+         margin: 40px;
+         width: 300px;
+    }
+     #prouctnmhid, #prouctokprice{
+         display: none;
+    }
+     #prouctnm{
+         font-size: 9px;
+    }
+     #order-total ,#subtotal ,#price-adjustments ,#shipment-total ,#tax-adjustments ,#order-charges{
+         display: none;
+    }
+     #prouctnmop{
+         font-size: 13px;
+    }
+     #twobuttonstoreacc{
+         position: relative;
+         left: 30px;
+    }
+     #orderallover{
+         font-size: 11px;
+         width: 300px;
+         position: relative;
+         left: 70px;
+    }
+     #thanksyou {
+         color: red;
+         position: relative;
+         left: 70px;
+    }
+     .account-my-orders {
+         padding: 40px;
+         font-size: 8px;
+    }
+     #user-info{
+         font-size: 12px;
+         text-align:center;
+    }
 }

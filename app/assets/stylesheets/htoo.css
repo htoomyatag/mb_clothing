@@ -105,7 +105,7 @@
      margin-bottom: 55px;
 }
  #htoo_styleheader{
-     font-size: 28px;
+     font-size: 16px;
      line-height: 1.1;
      font-weight: 900;
 }
@@ -113,8 +113,24 @@
      font-size: 14px;
      margin-top: -5px;
 }
- #style_cateback{
-     background-image: url(/assets/banner-02.jpg);
+ #style_cateback1{
+     background-image: url(/assets/banner-aok01.jpg);
+     height: 100%;
+    /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+ #style_cateback2{
+     background-image: url(/assets/banner-aok02.jpg);
+     height: 100%;
+    /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+ #style_cateback3{
+     background-image: url(/assets/banner-aok03.jpg);
      height: 100%;
     /* Center and scale the image nicely */
      background-position: center;
@@ -260,4 +276,7 @@
  #products{
      position: relative;
      top: -30px;
+}
+.order-payment-state{
+        display: none;
 }

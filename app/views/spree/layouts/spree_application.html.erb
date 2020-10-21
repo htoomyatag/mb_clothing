@@ -25,7 +25,7 @@
         <div id="content" class="<%= !content_for?(:sidebar) ? "row" : "col-sm-8 col-md-9" %>" data-hook>
           
           <%= flash_messages %>
-          <br><br><br><br><br><br>
+          <br><br><br>
           <%= yield %>
         </div>
 
@@ -70,7 +70,7 @@
   <p style="text-align:center;">
          
       Copyright © 
-      <script>document.write(new Date().getFullYear());</script> Online Cloting Store by 
+      <script>document.write(new Date().getFullYear());</script> Online Clothing Store by 
       <a href="https://mimiberryclothing.com" target="_blank">
               <%=image_tag 'logo-02.png'%>
       </a>

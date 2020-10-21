@@ -280,3 +280,23 @@
 .order-payment-state{
         display: none;
 }
+#content {
+     position: relative;
+     top: 27px;
+}
+
+
+#content h1 {
+         font-size: 22px;
+         position: relative;
+         bottom:-40px;
+         height: 50px;
+}
+
+
+#content .panel-default {
+     
+         position: relative;
+         bottom:-50px;
+      
+}

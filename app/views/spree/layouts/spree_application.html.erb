@@ -24,8 +24,7 @@
 
         <div id="content" class="<%= !content_for?(:sidebar) ? "row" : "col-sm-8 col-md-9" %>" data-hook>
           
-          <%= flash_messages %>
-          <br><br><br>
+      
           <%= yield %>
         </div>
 
@@ -33,17 +32,19 @@
       </div>
     </div>
   </body>
-
+<br><br><br>
 <footer id="htoo_footer">
 
   <div class="container"><br><br>
         <div class="col-md-4">
               <br>
               <h4 id="footer_header">CATEGORIES</h4><br>
-              <h6>Casual Shirts </h6>
-              <h6>Coats & Jackets</h6>
-              <h6>Jeans & Pants</h6>
-              <h6>Sports</h6>
+              <h6><a href="/t/categories/sweat-shirts" id="navli2">Sweatshirts</a></h6>
+              <h6><a href="/t/categories/croptops" id="navli2">Croptops</a></h6>
+              <h6><a href="/t/categories/tshirts" id="navli2">Tshirts</a></h6>
+              <h6><a href="/t/categories/new-node" id="navli2">Hoodies</a></h6>
+              <h6><a href="/t/categories/pants" id="navli2">Pants</a></h6>
+              <h6><a href="/t/categories/shirts" id="navli2">Shirts</a></h6>
              
         </div>
         <div class="col-md-4">

@@ -89,7 +89,7 @@
          width: 100px;
     }
      #product_image_ok{
-         height: 240px;
+         height: 150px;
          text-align: center;
     }
      #mobileproduct_div{
@@ -111,12 +111,12 @@
          width: 330px;
          position:relative;
          left: 35px;
-         bottom: 100px;
+         bottom: 50px;
     }
      #productmobile_detail{
          position: relative;
          left: 30px;
-         bottom: 120px;
+         bottom: 50px;
     }
      #mobileaddocart{
          width: 250px;
@@ -125,7 +125,7 @@
          width: 330px;
          position: relative;
          left: 30px;
-         bottom: 100px;
+         bottom: 50px;
     }
      #cart-detail{
          font-size: 8px;

@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-<title>MIMIBERRY Clothing</title>
+<title>Clothing Store | MIMIBERRY </title>
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1" name="viewport">
 <%== meta_data_tags %>
@@ -14,3 +14,22 @@
 <![endif]-->
 <%= yield :head %>
 <%= render 'spree/shared/translations' %>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '806361773586984',
+      xfbml      : true,
+      version    : 'v10.0'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>

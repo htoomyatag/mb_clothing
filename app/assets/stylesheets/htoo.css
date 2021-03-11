@@ -287,3 +287,114 @@
 #existing-customer p strong{
    display: none;
 }
+
+
+#options_1{
+
+     position: relative;
+    display: inline-block;
+    padding: 10px 70px 10px 13px !important;
+    width: 100%;
+    height: auto !important;
+    border: 1px solid #333333;
+    background: url(//dr89u07j3vi3h.cloudfront.net/assets/arrow_select-7816eeb….png) right center no-repeat;
+    background-color: #fff;
+    color: #444444;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 16px !important;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     left: 10px;
+     top: 2px;
+
+
+}
+
+
+#options_2{
+
+     position: relative;
+    display: inline-block;
+    padding: 10px 70px 10px 13px !important;
+    width: 100%;
+    height: auto !important;
+    border: 1px solid #333333;
+    background: url(//dr89u07j3vi3h.cloudfront.net/assets/arrow_select-7816eeb….png) right center no-repeat;
+    background-color: #fff;
+    color: #444444;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 16px !important;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     top: 5px;
+     left: 10px;
+
+}
+
+#procate{
+     font-size: 20px;
+     font-weight: bold;
+}
+
+#proname{
+     font-size: 20px;
+     font-weight: lighter;  
+}
+
+#proprice{
+     font-size: 20px;
+     font-weight: bold;
+}
+
+#product-price{
+     display: none;
+}
+
+#quantity {
+    
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px 10px 13px !important;
+    width: 30%;
+    height: auto !important;
+    border: 1px solid #333333;
+    background: url(//dr89u07j3vi3h.cloudfront.net/assets/arrow_select-7816eeb….png) right center no-repeat;
+    background-color: #fff;
+    color: #444444;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 16px !important;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    top: 15px;
+
+}
+
+
+
+
+#add-to-cart-button {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 30%;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 47px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #202220;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.3s;
+    padding: 0;
+    border-width: 0;
+        top: 15px;
+
+}

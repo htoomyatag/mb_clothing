@@ -28,22 +28,39 @@
       <div data-hook="product_right_part_wrap">
         <div id="product-description" data-hook="product_description">
           <h2 itemprop="name" id="htoo_product_title">
-            <%= @product.name %> <br>
-            <br>
-              ရန်ကုန်မြို့တွင်း အိမ်အရောက်ပို့ပေးတဲ့      <br>
-              Delivery Service ရှိပါတယ်ခင်ဗျာ။     <br>
-              အော်ဒါမှာပြီး 7ရက်ဝန်းကျင်နေရင်
-              ပို့ပေးပါတယ်။ <br>
-              ရန်ကုန်မြို့တွင်း
-              အိမ်အရောက်ငွေချေစနစ်ပါ။     <br>
-              ပို့ခကတော့ ဘယ်နှစ်ထည်မှာယူယူ      <br>
-              တစ်ကြောင်းစာပို့ခ
-              ရန်ကုန်မြို့တွင်း ၂၅၀၀ကျပ် ပါ။
+            <span id="procate">
+              <%= @product.category.name %> 
+            </span><br>
+            <span id="proname">
+              <%= @product.name %> 
+            </span><br>
+             <span id="proprice">
+               <%= display_price(@product) %>
+            </span><br>
+               
+
+           
+      
           </h2> 
 
           <div id="cart-form" data-hook="cart_form">
             <%= render partial: 'cart_form' %>
           </div>
+
+          <br><h3> Delivery Notes </h3>
+
+          <p>
+
+              ရန်ကုန်မြို့တွင်း အိမ်အရောက်ပို့ပေးတဲ့      
+              Delivery Service ရှိပါတယ်ခင်ဗျာ။    
+              အော်ဒါမှာပြီး 7ရက်ဝန်းကျင်နေရင်
+              ပို့ပေးပါတယ်။ <br>
+              ရန်ကုန်မြို့တွင်း
+              အိမ်အရောက်ငွေချေစနစ်ပါ။    
+              ပို့ခကတော့ ဘယ်နှစ်ထည်မှာယူယူ     
+              တစ်ကြောင်းစာပို့ခ
+              ရန်ကုန်မြို့တွင်း ၂၅၀၀ကျပ် ပါ။
+          </p>
         </div>
 
      

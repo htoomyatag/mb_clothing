@@ -282,8 +282,8 @@
 }
 #content {
      position: relative;
-     top: 27px;
+     top: 67px;
 }
-#u_0_4_AN{
-     color: white;
+#existing-customer p strong{
+   display: none;
 }

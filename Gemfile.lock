@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/hefan/spree_dynamic_variants.git
+  revision: 71b73f81e082ef92daa065e7e5afa86d06e73939
+  branch: master
+  specs:
+    spree_dynamic_variants (3.2.0)
+      spree_core (> 3.1)
+
+GIT
   remote: https://github.com/spree-contrib/spree_related_products.git
   revision: e2a64fbfcde045ba94f541a405f6523a0d03c802
   specs:
@@ -476,6 +484,7 @@ DEPENDENCIES
   selenium-webdriver
   spree (~> 3.7.0)
   spree_auth_devise (~> 3.5)
+  spree_dynamic_variants!
   spree_gateway (~> 3.4)
   spree_related_products!
   spree_social!

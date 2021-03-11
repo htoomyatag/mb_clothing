@@ -68,3 +68,4 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'image_processing'
 gem 'mini_magick'
+gem 'spree_social', github: 'spree-contrib/spree_social'

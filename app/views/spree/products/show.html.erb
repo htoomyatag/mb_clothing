@@ -68,20 +68,45 @@
     </div>
 
      <div class="col-md-4 col-sm-7" id="mobilecoupon">
-      <div class="sticky1">
-         <span id="tentitle"> 10% OFF </span>
-         <span id="tentitle2"> FOR NEW CUSTOMERS </span><br><br>
-         <span> can use coupon code </span><br>
-         <span id="cpcode"> WELCOME </span><br><br>
-         <span> to receive 10% discount for your first order. </span>
-      </div><br>
-        <div class="sticky2">
-         <span id="tentitle2"> CUSTOMERS ADDRESS IN  </span>
-         <span id="tentitle"> Yangon  </span><br><br>
-         <span> can use coupon code </span><br>
-         <span id="cpcode"> FOCDELI </span><br><br>
-         <span> to receive delivery charges free when your purchase amount exceeded than 30000 kyats. </span>
-      </div>
+
+      <table style="float: right;">
+
+         <tr>
+          <td id="stickclick1">
+             <p id="disverti1"> 10% Discount </p>
+          </td>
+          <td id="stickbox1">
+             <div class="sticky1">
+                 <span id="tentitle"> 10% OFF </span>
+                 <span id="tentitle2"> FOR NEW CUSTOMERS </span><br><br>
+                 <span> can use coupon code </span><br>
+                 <span id="cpcode"> WELCOME </span><br><br>
+                 <span> to receive 10% discount for your first order. </span>
+              </div><br>
+          </td>
+        </tr>
+
+       
+      </table><br><br><br><br><br><br><br><br><br><br><br>
+<table style="float: right;">
+
+       <tr>
+          <td id="stickclick2">
+              <p id="disverti2"> FREE DELIVERY </p>
+          </td>
+          <td id="stickbox2">
+            <div class="sticky2">
+               <span id="tentitle2"> CUSTOMERS ADDRESS IN  </span>
+               <span id="tentitle"> Yangon  </span><br><br>
+               <span> can use coupon code </span><br>
+               <span id="cpcode"> FOCDELI </span><br><br>
+               <span> to receive delivery charges free when your purchase amount exceeded than 30000 kyats. </span>
+            </div>
+          </td>
+        </tr>
+        </table>
+     
+        
      </div>
   </div>
 <% end %>
@@ -147,7 +172,6 @@
 <script type="text/javascript">
   
 
-
   //hide and show desc
 $("#product_desctlt").click(function(){
   $("#product-properties").hide( "slow" );
@@ -167,8 +191,8 @@ $("#product_desctlt2").click(function(){
 
 
 $(document).ready(function(){
-    $('.sticky1').css('display','none');
-    $('.sticky2').css('display','none');
+    $('#stickbox1').css('display','none');
+    $('#stickbox2').css('display','none');
 });
 
 
@@ -176,15 +200,29 @@ $(document).ready(function(){
 $(document).scroll(function () {
 
 
-
-
     var y = $(this).scrollTop();
-    if (y > 50) {
-        $('.sticky1').fadeIn();
-        $('.sticky2').fadeIn();
+    if (y > 80) {
+        $('#stickbox1').fadeOut();
+        $('#stickbox2').fadeOut();
+        $('#stickclick1').fadeIn();
+        $('#stickclick2').fadeIn();
     } 
 
 });
+
+
+
+$("#stickclick1").click(function(){
+  $("#stickbox1").show("slow");
+  $("#stickclick1").hide();
+});
+
+
+$("#stickclick2").click(function(){
+  $("#stickbox2").show("slow");
+  $("#stickclick2").hide();
+});
+
 
 
 

@@ -404,10 +404,21 @@ div.sticky1 {
 
 
   background-color: black;
-  padding: 30px;
+  padding: 35px;
    color: white;
    text-align: center;
+   width: 400px;
 }
+
+div.sticky2 {
+  
+  background-color: black;
+  padding: 35px;
+  color: white;
+  text-align: center;
+    width: 400px;
+}
+
 
 
 
@@ -427,34 +438,68 @@ div.sticky2:hover {
 
 
 
-div.sticky2 {
-  
-  background-color: black;
-  padding: 30px;
-  color: white;
-  text-align: center;
-}
-
-
-
 #tentitle {
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 400;
     font-style: italic;
 }
 
 
 #tentitle2 {
-    font-size: 15px;
+    font-size: 10px;
     color: yellow;
 }
 
 #cpcode {
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 400;
     color: #FF4500;
 }
 
 html, body {
     overflow-x: hidden;
+}
+
+
+#disverti1 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 25px;
+    color: white;
+}
+
+
+#disverti2 {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 25px;
+    color: white;
+}
+
+
+#stickclick1{
+    background: black;
+      padding: 15px;
+      
+}
+
+#stickclick2{
+    background: black;
+      padding: 15px;
+}
+
+
+#stickclick1:hover {
+    -moz-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+
+#stickclick2:hover {
+    -moz-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
 }

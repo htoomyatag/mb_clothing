@@ -337,4 +337,12 @@
     .order-payment-state{
         display: none;
     }
+
+    #mobilecoupon{
+        display: none;
+    }
+
+    #delitext {
+        font-size: 10px;
+    }
 }

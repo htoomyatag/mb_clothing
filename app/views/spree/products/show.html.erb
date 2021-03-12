@@ -24,7 +24,7 @@
       </div>
     </div>
 
-    <div class="col-md-8 col-sm-7" data-hook="product_right_part" id="productmobile_detail">
+    <div class="col-md-4 col-sm-7" data-hook="product_right_part" id="productmobile_detail">
       <div data-hook="product_right_part_wrap">
         <div id="product-description" data-hook="product_description">
           <h2 itemprop="name" id="htoo_product_title">
@@ -49,7 +49,7 @@
 
           <br><h3> Delivery Notes </h3>
 
-          <p>
+          <p id="delitext">
 
               ရန်ကုန်မြို့တွင်း အိမ်အရောက်ပို့ပေးတဲ့      
               Delivery Service ရှိပါတယ်ခင်ဗျာ။  <br>  
@@ -66,6 +66,23 @@
      
       </div>
     </div>
+
+     <div class="col-md-4 col-sm-7" id="mobilecoupon">
+      <div class="sticky1">
+         <span id="tentitle"> 10% OFF </span>
+         <span id="tentitle2"> FOR NEW CUSTOMERS </span><br><br>
+         <span> can use coupon code </span><br>
+         <span id="cpcode"> WELCOME </span><br><br>
+         <span> to receive 10% discount for your first order. </span>
+      </div><br>
+        <div class="sticky2">
+         <span id="tentitle2"> Customers live in  </span>
+         <span id="tentitle"> Yangon  </span><br><br>
+         <span> can use coupon code </span><br>
+         <span id="cpcode"> FOCDELI </span><br><br>
+         <span> to receive delivery charges free when your purchase amount exceeded than 30000 kyats. </span>
+      </div>
+     </div>
   </div>
 <% end %>
 
@@ -146,6 +163,27 @@ $("#product_desctlt2").click(function(){
   $("#product-properties").show( "slow" );
   $("#product_desctlt").css("color", "#888");
   $("#product_desctlt2").css("color", "#333");
+});
+
+
+$(document).ready(function(){
+    $('.sticky1').css('display','none');
+    $('.sticky2').css('display','none');
+});
+
+
+
+$(document).scroll(function () {
+
+
+
+
+    var y = $(this).scrollTop();
+    if (y > 50) {
+        $('.sticky1').fadeIn();
+        $('.sticky2').fadeIn();
+    } 
+
 });
 
 

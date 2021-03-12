@@ -398,3 +398,63 @@
         top: 15px;
 
 }
+
+
+div.sticky1 {
+
+
+  background-color: black;
+  padding: 30px;
+   color: white;
+   text-align: center;
+}
+
+
+
+div.sticky1:hover {
+    -moz-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+div.sticky2:hover {
+    -moz-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+
+
+div.sticky2 {
+  
+  background-color: black;
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+
+
+#tentitle {
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+#tentitle2 {
+    font-size: 15px;
+    color: yellow;
+}
+
+#cpcode {
+    font-size: 35px;
+    font-weight: 700;
+    color: #FF4500;
+}
+
+html, body {
+    overflow-x: hidden;
+}

@@ -480,7 +480,7 @@ html, body {
 #stickclick1{
     background: black;
       padding: 15px;
-      
+
 }
 
 #stickclick2{
@@ -502,4 +502,15 @@ html, body {
     -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
     cursor: pointer;
+}
+
+#sizeguide{
+    position: relative;
+    left: 220px;
+    font-size: 12px;
+}
+
+
+#sizeguide:hover{
+        cursor: pointer;
 }

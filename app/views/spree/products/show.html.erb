@@ -42,7 +42,7 @@
            
       
           </h2> 
-
+          <span id="sizeguide" data-toggle="modal" data-target="#exampleModal">Size Guide </span>
           <div id="cart-form" data-hook="cart_form">
             <%= render partial: 'cart_form' %>
           </div>
@@ -166,6 +166,38 @@
 
   
 
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="text-align: center;">Size Chart</h5>
+        
+      </div>
+      <div class="modal-body">
+           
+            <% if @product.has_variants? %>
+              <% @product.variant_images.each do |i| %>
+                <% next if @product.images.include?(i) %>
+      
+         
+                  <% unless set_image_alt(i, :mini) != "sizechart" %>
+                  <% img_tag = image_tag(main_app.url_for(i.url(:image)), alt: set_image_alt(i, :image)) %>
+                  <%= link_to(img_tag, main_app.url_for(i.url(:product))) %>
+                  <% end %>
+             
+              <% end %>
+            <% end %>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 

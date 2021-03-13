@@ -289,12 +289,12 @@
 }
 
 
-#options_1{
+#inside-product-cart-form table select{
 
-     position: relative;
+    position: relative;
     display: inline-block;
     padding: 10px 70px 10px 13px !important;
-    width: 100%;
+    width: 240px;
     height: auto !important;
     border: 1px solid #333333;
     background: url(//dr89u07j3vi3h.cloudfront.net/assets/arrow_select-7816eeb….png) right center no-repeat;
@@ -307,33 +307,12 @@
     -webkit-appearance: none;
     -moz-appearance: none;
      left: 10px;
-     top: 2px;
+     top: 4px;
+     margin-bottom: 5px;
 
 
 }
 
-
-#options_2{
-
-     position: relative;
-    display: inline-block;
-    padding: 10px 70px 10px 13px !important;
-    width: 100%;
-    height: auto !important;
-    border: 1px solid #333333;
-    background: url(//dr89u07j3vi3h.cloudfront.net/assets/arrow_select-7816eeb….png) right center no-repeat;
-    background-color: #fff;
-    color: #444444;
-    font-size: 12px;
-    text-transform: uppercase;
-    line-height: 16px !important;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-     top: 5px;
-     left: 10px;
-
-}
 
 #procate{
      font-size: 20px;

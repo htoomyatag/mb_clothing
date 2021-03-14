@@ -176,7 +176,66 @@
         
       </div>
       <div class="modal-body">
-          <%= render partial: 'sizechart_baung_bee' %>
+
+
+        <% if @product.category.name == "Sweatshirts" %>
+
+             <%= render partial: 'sizechart_latshatasone' %>
+
+        <% elsif @product.category.name == "GirlHoodies" %>
+
+             <%= render partial: 'sizechart_girl_hoodies' %>
+
+        <% elsif @product.category.name == "MenPants" %>
+
+             <%= render partial: 'sizechart_baung_bee' %>
+
+        <% elsif @product.category.name == "MenShirts" %>
+
+             <%= render partial: 'sizechart_menshirts' %>
+
+        <% elsif @product.category.name == "MenTanktops" %>
+
+              <%= render partial: 'sizechart_sotkyal' %>
+        
+        <% elsif @product.category.name == "MenShortPants" %>
+
+              <%= render partial: 'sizechart_baung_bee_free' %>
+
+        <% elsif @product.category.name == "GirlCroptops" %>
+
+              <%= render partial: 'sizechart_girlcroptop' %>
+
+        <% elsif @product.category.name == "MenSportShirts" %>
+
+             <%= render partial: 'sizechart_polo' %>
+
+        <% elsif @product.category.name == "Tshirts" %>
+
+             <%= render partial: 'sizechart_tshirts' %>
+
+        <% elsif @product.category.name == "OverSizeTee" %>
+
+             <%= render partial: 'sizechart_latkya' %>
+
+        <% elsif @product.category.name == "GirlSmallcroptop" %>
+
+             <%= render partial: 'sizechart_smallgirlcroptop' %>
+
+        <% elsif @product.category.name == "HiphopTshirts" %>
+             
+             <%= render partial: 'sizechart_hiphop' %>
+
+        <% elsif @product.category.name == "MenHoodies" %>
+
+             <%= render partial: 'sizechart_boyhoodies' %>
+
+        <% else %>
+
+           sorry no size chart available for this product yet
+        
+        <% end %>
+        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

@@ -177,18 +177,7 @@
       </div>
       <div class="modal-body">
            
-            <% if @product.has_variants? %>
-              <% @product.variant_images.each do |i| %>
-                <% next if @product.images.include?(i) %>
-      
-         
-                  <% unless set_image_alt(i, :mini) != "sizechart" %>
-                  <% img_tag = image_tag(main_app.url_for(i.url(:image)), alt: set_image_alt(i, :image)) %>
-                  <%= link_to(img_tag, main_app.url_for(i.url(:product))) %>
-                  <% end %>
-             
-              <% end %>
-            <% end %>
+           addn data here
 
 
       </div>

@@ -13,10 +13,10 @@
         <% next if @product.images.include?(i) %>
         <li class='vtmb tmb-<%= i.viewable.id %>'>
  
-          <% unless set_image_alt(i, :mini) == "sizechart" %>
+         
           <% img_tag = image_tag(main_app.url_for(i.url(:mini)), class: "thumbnail", alt: set_image_alt(i, :mini)) %>
           <%= link_to(img_tag, main_app.url_for(i.url(:product))) %>
-          <% end %>
+      
         </li>
       <% end %>
     <% end %>

@@ -1,54 +1,58 @@
 <% address_id = address_type.chars.first %>
 
 <div class="inner" data-hook=<%="#{address_type}_inner" %>>
-  <p class="form-group" id=<%="#{address_id}firstname" %>>
-   
-  </p>
-  <p class="form-group" id=<%="#{address_id}lastname" %>>
-  
-    <%= form.select :firstname, ["Ko","Ma","Daw","U"] %>
-    Full Name (နာမည် အပြည့်အစုံ)
-    <%= form.text_field :lastname, class: 'form-control', required: true %>
-  </p>
+ 
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" id=<%="#{address_id}firstname" %>>First Name</label>
+      <%= form.text_field :firstname, class: 'form-control', required: true %>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail4" id=<%="#{address_id}lastname" %>>Last Name</label>
+      <%= form.text_field :lastname, class: 'form-control', required: true %>
+    </div>
+  </div>
 
-  <p class="form-group" id=<%="#{address_id}address1" %>>
-    Street (လမ်းအမည်)
+  <div class="form-group col-md-12">
+    <label for="inputAddress" id=<%="#{address_id}zipcode" %>>Address</label>
     <%= form.text_field :address1, class: 'form-control required' %>
-  </p>
-  <p class="form-group" id=<%="#{address_id}address2" %>>
-     Detail Address (အနီးအနားရှိထင်ရှားသည့် နေရာများ)
-    <%= form.text_field :address2, class: 'form-control' %>
-  </p>
-  <p class="form-group" id=<%="#{address_id}city" %>>
-    Township (မြို့နယ်)
-    <%= form.text_field :city, class: 'form-control', required: true %>
-  </p>
+  </div>
 
-  <p class="form-group"  style="display:none;" id=<%="#{address_id}country" %> >
-    <%= form.label :country_id do %>
-      <%= Spree.t(:country) %><abbr class="required" title="required">*</abbr>
-    <% end %>
-    <span id=<%="#{address_id}country-selection" %>>
-     <%= form.text_field :country_id, class: 'form-control', :value => 146 %>
-    </span>
-  </p>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputPhone" id=<%="#{address_id}phone" %>>Phone 1</label>
+        <%= form.phone_field :phone, class: 'form-control', required: true %>
+    </div>
 
-  <p class="form-group" style="display: none;"> id=<%="#{address_id}zipcode" %>>
-    <%= form.label :zipcode do %>
-      <%= Spree.t(:zip) %><% if address.require_zipcode? %><abbr class="required" title="required">*</abbr><% end %>
-    <% end %>
-       <%= form.text_field :zipcode, class: 'form-control', :value => 11181 %>
-      <%= form.text_field :state_id, class: 'form-control', :value => 2090 %>
-  </p>
+    <div class="form-group col-md-6">
+        <label for="inputPhone" id=<%="#{address_id}altphone" %>>Phone 2</label>
+         <%= form.phone_field :alternative_phone, class: 'form-control' %>
+    </div>
+    
+  </div>
+  
+  <div class="form-row">
 
-  <p class="form-group" id=<%="#{address_id}phone" %>>
-    Phone  For example 09 795545748, 01 572993
-    <%= form.phone_field :phone, class: 'form-control', required: address.require_phone? %>
-  </p>
-  <% if Spree::Config[:alternative_shipping_phone] %>
-    <p class="form-group" id=<%="#{address_id}altphone" %>>
-      <%= form.label :alternative_phone, Spree.t(:alternative_phone) %>
-      <%= form.phone_field :alternative_phone, class: 'form-control' %>
-    </p>
-  <% end %>
+  <div class="form-group col-md-6">
+    <label for="inputAddress2" id=<%="#{address_id}address2" %>>Township</label>
+      <%= form.text_field :address2, class: 'form-control' %>
+  </div>
+
+
+   <div class="form-group col-md-6">
+      <label for="inputCity" id=<%="#{address_id}city" %>>City</label>
+      <%= form.text_field :city, class: 'form-control', required: true %>
+  </div>
+
+
+</div>
+
+
+<p class="form-group" style="display: none;">
+    <%= form.text_field :zipcode, class: 'form-control', :value => 11181 %>
+    <%= form.text_field :state_id, class: 'form-control', :value => 2090 %>
+    <%= form.text_field :country_id, class: 'form-control', :value => 146 %>
+</p>
+
+
 </div>

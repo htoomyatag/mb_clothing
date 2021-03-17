@@ -381,12 +381,12 @@
 
 div.sticky1 {
 
-
-  background-color: black;
-  padding: 35px;
-   color: white;
-   text-align: center;
-   width: 400px;
+  padding: 10px 10px 20px 10px;
+  border: 1px solid #BFBFBF;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  width: 380px;
+  text-align: center;
 }
 
 div.sticky2 {
@@ -395,44 +395,40 @@ div.sticky2 {
   padding: 35px;
   color: white;
   text-align: center;
-    width: 400px;
+    width: 380px;
 }
 
 
 
 
-div.sticky1:hover {
-    -moz-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
-    -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-}
-
-div.sticky2:hover {
-    -moz-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
-    -webkit-box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
-    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-}
 
 
 
 #tentitle {
     font-size: 20px;
     font-weight: 400;
-    font-style: italic;
+    color: #13a3bf;
 }
 
 
 #tentitle2 {
     font-size: 10px;
-    color: yellow;
+    color: #13a3bf;
+    font-weight: lighter;
+}
+
+
+#tentitle3 {
+    font-size: 14px;
+    color:#9b9b9b;
+    font-weight: lighter;
 }
 
 #cpcode {
     font-size: 30px;
     font-weight: 400;
-    color: #FF4500;
+    color: #ff696e;
+    font-weight: bold;
 }
 
 html, body {
@@ -445,6 +441,7 @@ html, body {
     text-orientation: mixed;
     font-size: 25px;
     color: white;
+
 }
 
 
@@ -457,13 +454,13 @@ html, body {
 
 
 #stickclick1{
-    background: black;
+    background: #ff696e;
       padding: 15px;
 
 }
 
 #stickclick2{
-    background: black;
+    background: #13a3bf;
       padding: 15px;
 }
 

@@ -38,6 +38,8 @@
   </a>
 </div>
 
+<button id="mymodlBtn">Open Modal</button>
+
 
 <div class="row" id="three_htoo_casual">
 	<div class="col-md-4" id="htoo_casual">
@@ -71,6 +73,7 @@
 
 <div id="mobileoverview">
 <h3 id="htoo_producthead">PRODUCT OVERVIEW </h3>
+
 <h5>
 		<a href="/products" class="htoo_subheadera">All Products</a>
 		<a href="/t/categories/sweat-shirts" class="htoo_subheader">Sweatshirts</a>
@@ -155,6 +158,37 @@
 </div>
 
 
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+     
+  	 <div id="mbhead">
+	     <span class="close">&times;</span>
+	     <h3 id="mbpopuptitle">Welcome to MIMIBERRY </h3>
+ 	</div>
+     <div id="mbbody">
+	     <h4 id="mbpopupsectitle">Flat rate</h4>
+	     <p id="mbpopupsectext">DELIVERY CHARGES 2500 KYATS</p>
+
+	     <h4 id="mbpopupsectitle">Deliver</h4>
+	     <p id="mbpopupsectext">YOUR PURCHASE WITHIN 7-10 DAYS </p>
+
+	     <h4 id="mbpopupsectitle">Offer</h4>
+	     <p id="mbpopupsectext">QUALITY FASHION AT THE BEST PRICE</p>
+	     <center>
+	     	   <a href="/products" class="btn" id="shop_now">SHOP NOW</a>
+	     </center><br>
+     </div>
+
+
+    
+  </div>
+
+</div>
+
+
+
 
 
 <script type="text/javascript">
@@ -235,6 +269,33 @@ $("#htoo_elegant").mouseover(function(){
 
 
 
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("mymodlBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+
 </script>
 
 
@@ -250,6 +311,85 @@ $("#htoo_elegant").mouseover(function(){
 	}
 
 
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 160px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+
+  margin: auto;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+#mbhead {
+	background: white;
+	padding: 20px;
+}
+
+#mbbody {
+	  background-color:  #ffe6e6;
+	  padding: 20px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#mbpopuptitle{
+	font-size: 32px;
+	font-weight: 600;
+	text-align: center;
+}
+
+#mbpopupsectitle {
+	color: #ff696e;
+	font-size: 32px;
+	font-weight: 600;
+	text-align: center;
+
+}
+
+#mbpopupsectext {
+	font-size: 12px;
+	color: black;
+	text-align: center;
+}
+
+#shop_now {
+	background: #ff696e;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	width: 160px;
+	height: 40px;
+
+}
 
 
 </style>

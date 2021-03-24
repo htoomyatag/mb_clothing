@@ -490,3 +490,8 @@ html, body {
 #sizeguide:hover{
         cursor: pointer;
 }
+
+ #navlinewin {
+     font-size: 16px;
+     font-weight: bold;
+}

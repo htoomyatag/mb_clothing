@@ -24,6 +24,10 @@
   </div>
 <% end %>
 
+<div id="mobile_pagi">
+
 <% if products.respond_to?(:total_pages) %>
   <%= paginate products, theme: 'twitter-bootstrap-3' %>
 <% end %>
+
+</div>

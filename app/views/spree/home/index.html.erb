@@ -113,9 +113,10 @@
       <%= search_field_tag :keywords, params[:keywords], placeholder: Spree.t(:search), class: "form-control", style:"height: 60px;" %>
     </div><!-- /input-group -->
     <% end %>
- 
+
 </div><!-- /.row -->
-<br>
+ <br><br> <br><br>
+
 
 <% max_level = Spree::Config[:max_level_in_taxons_menu] || 1 %>
    <div class="col-md-12" id="htoo_bigfilter" data-hook> 
@@ -141,13 +142,10 @@
 </div>
 
 
-
-<div style="height: 55px;"></div>
 <div class="row" >
 
 <div data-hook="homepage_products" id="mobileproduct_div">
 	
-		 
 
   <% cache(cache_key_for_products) do %>
    <%= render partial: 'spree/shared/products', locals: { products: @products } %>

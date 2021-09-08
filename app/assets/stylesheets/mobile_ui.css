@@ -89,17 +89,18 @@
          width: 100px;
     }
      #product_image_ok{
-         height: 150px;
+         height: 185px;
          text-align: center;
     }
      #mobileproduct_div{
          position: relative;
-         left: 50px;
-         width: 330px;
+         width: 100%;
+         top: -80px;
+         font-size: 9px;
     }
      #htoo_producttitle, #htoo_productprice{
          text-align:center;
-         font-size: 14px;
+         font-size: 12px;
     }
      .navbar .navbar-toggle{
          background-color: black;
@@ -344,5 +345,10 @@
 
     #delitext {
         font-size: 10px;
+    }
+
+    #mobile_pagi {
+        position: relative;
+        left: 60px;
     }
 }
